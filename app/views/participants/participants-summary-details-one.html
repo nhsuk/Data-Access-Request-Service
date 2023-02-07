@@ -23,23 +23,11 @@ DARS - NHS
 <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
-<script>
-    function myFunction() {
-
-        if(document.getElementById('optionone').checked) {
-            document.getElementById('linkid').href = "/participants/select-new-existing-agreement";
-        }
-
-      if(document.getElementById('optiontwo').checked) {
-            document.getElementById('linkid').href = "/participants/have-you-completed-this-section";
-        }
-
-    }
-</script>
-
-
-
-
+<style type="text/css">
+  .legal-basis{
+        border-bottom: 0px !important;
+  }
+</style>
 </head>
 <body class="">
 
@@ -161,7 +149,7 @@ Signout
 <div class="nhsuk-width-container">
 <ol class="nhsuk-breadcrumb__list">
 <li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-209174-W2H3G</li>
-<li class="nhsuk-breadcrumb__item" style="float: right;"><strong>Total Estimated Cost:</strong> £1234.50</li>
+<li class="nhsuk-breadcrumb__item" style="float: right;"><strong>Total Estimated Cost:</strong> £4184.50</li>
 </ol>
 </div>
 </nav>
@@ -169,12 +157,13 @@ Signout
 
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/dsa-section-list">
+<a class="nhsuk-back-link__link" href="/participants/legal-bases-upload-s251">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
 Go back</a>
-</div>   
+
+</div>        
 
 
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
@@ -186,68 +175,202 @@ Go back</a>
 <br />
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
 About the Participants</span>
-Are you providing (or have you provided) any Participant data to NHS England for this application?
+Check your answers
 </h1>
 
-<div class="nhsuk-inset-text">
-  <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>Participants are a group of identified individuals that you supply to NHS England, for NHS England to provide data against. Participant groups are sometimes known as Cohorts. </p>
-  <p>If you are seeking data from NHS England and are not providing any Participant data to NHS England, selecting ‘No’ will skip this section.</p>
 
-<p>If you are providing or have provided Participant data, answer ‘Yes’ to this question.</p>
 
-<p>If you want NHS England to identify Participants on your behalf based on criteria, such as, females over the age of 30 who have had hysterectomy in the last 12 months, select ‘No’ to this question and add your criteria to the data minimisation section within the application.</p>
+<dl class="nhsuk-summary-list">
+  <div class="nhsuk-summary-list__row summarylist-col-adjust">
+    <dt class="nhsuk-summary-list__key">
+        Participant data to NHS England
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      Yes  
+    </dd>
 
-</div>
+    <dd class="nhsuk-summary-list__actions">
 
-<div class="nhsuk-hint nhsuk-u-margin-bottom-2">
-  You may only submit one group of Participants per Data Sharing Agreement (DSA) application, but you can update your Participant group at any time. If you need to associate multiple Participant groups with the same requested data set you must create an application for each Participant group.
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden"> Participant data to NHS England</span>
+      </a>
+
+    </dd>
+
   </div>
 
-<br/>
+  <div class="nhsuk-summary-list__row summarylist-col-adjust">
+    <dt class="nhsuk-summary-list__key">
+      Type of Participant data
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      Existing agreement (using Participant data already provided on a previous DSA)
+    </dd>
+
+ <dd class="nhsuk-summary-list__actions">
+
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden"> Type of Participant data</span>
+      </a>
+
+    </dd>
 
 
 
-<div class="nhsuk-form-group">
+  </div>
 
-  <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
-    <div class="nhsuk-radios nhsuk-radios--conditional">
+  <div class="nhsuk-summary-list__row summarylist-col-adjust">
+    <dt class="nhsuk-summary-list__key">
+      DARS reference number
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      DARS-NIC-12345-ABCD v0.4
+    </dd>
 
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
-        <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
-          Yes
-        </label>
+ <dd class="nhsuk-summary-list__actions">
 
-        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
-          If no Participant data is received until month 3 (for example) of a 12-month DSA that has a monthly data-drop frequency, then the data recipient will only receive 9 of the 12 scheduled data drops.
-        </div>
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden"> Type of Participant data</span>
+      </a>
 
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
-        <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
-        No
-        </label>
-      </div>
-
-    </div>
-  </fieldset>
-
-</div>
+    </dd>
 
 
 
+  </div>
 
 
-<div class="nhsuk-u-padding-bottom-9"></div>
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Linking your Participant data with NHS England’s data
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>Required fields</p>
+    <p>- NHS Number</p>
+    <p>- Date of Birth</p>
+    <p>- Postcode</p>
+    <div class="nhsuk-u-padding-bottom-3"></div>
+    <p>Recommended fields</p>
+    <p>- Family name</p>
+    <p>- Given name</p>
+    <p>- Gender</p>
+    <div class="nhsuk-u-padding-bottom-5"></div>
+
+    <p>Any additional or relevant information</p>
+    <div class="nhsuk-hint" id="example-hint">
+    
+  </div>
+    <div class="nhsuk-u-padding-bottom-3"></div>
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+    </dd>
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden">Linking your Participant data with NHS Digital’s data</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Participant Data Contributor(s)
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>John Smith</p>
+      <p>Data analyst</p>
+      <p>University of Oxford</p>
+      <p> john.smith@ox.ac.uk</p>
+      <div class="nhsuk-u-padding-bottom-5"></div>
+      <p>Jimmy Jazz</p>
+      <p>Project Manager</p>
+      <p>University of Manchester</p>
+      <p> jimmy.jazz@manchester.ac.uk</p>
+
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden">Participant Data Contributor(s)</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key legal-basis">
+      legal basis 
+    </dt>
+    <dd class="nhsuk-summary-list__value legal-basis">
+      <p>Consent (Reasonable Expectation)</p>
+      <p>98765.pdf</p>
+    </dd>
+     <dd class="nhsuk-summary-list__actions legal-basis">
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden">Participant Data Contributor(s)</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+    <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key legal-basis">
+
+    </dt>
+    <dd class="nhsuk-summary-list__value legal-basis">
+      <p>National Health Service Act 2006 - s251 - 'Control of patient information' document</p>
+      <p>123456.pdf</p>
+    </dd>
+     <dd class="nhsuk-summary-list__actions legal-basis">
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden">Participant Data Contributor(s)</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row ">
+    <dt class="nhsuk-summary-list__key">
+
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>Other</p>
+      <p>-ABC</p>
+    </dd>
+     <dd class="nhsuk-summary-list__actions">
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden">Participant Data Contributor(s)</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+
+
+
+
+
+ 
+
+
+</dl>
+
 <p>
-<a href="#" class="nhsuk-button" onclick='myFunction()' id="linkid">Continue</a><br />
+<a href="/participants/have-you-completed-this-section" class="nhsuk-button">Continue</a><br />
 <a href="#">Return to this application later</a>
 </p>
 
-
 </div>  
+
+
 </div>
 </main>
 </div>

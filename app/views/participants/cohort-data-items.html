@@ -174,12 +174,12 @@ Go back</a>
 <br />
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
 About the Participants</span>
-Linking your Participant data with NHS England’s data 
+Linking your Participant data with NHS Digital’s data 
 </h1>
 
 <div class="nhsuk-inset-text">
   <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>NHS England use <a href="https://digital.nhs.uk/services/demographics/master-person-service" target="_blank">Master Person Service (MPS)</a> to link Participant data with NHS England's data. MPS helps NHS England increase the amount of useable, better-quality data available to support research and planning. </p>
+  <p>NHS Digital use <a href="https://digital.nhs.uk/services/demographics/master-person-service" target="_blank">Master Person Service (MPS)</a> to link Participant data with NHS Digital data. MPS helps NHS Digital increase the amount of useable, better-quality data available to support research and planning. </p>
 </div>
 
 
@@ -192,7 +192,7 @@ Linking your Participant data with NHS England’s data
   <div class="nhsuk-details__text">
     <p>When you provide NHS Digital with Participant data (that is, a list of identified individuals), you must include a Study ID that contains a unique and non-identifiable value for each individual. All Participant data submissions must be submitted as a .CSV file using the column headers and formats in the table. </p>
 
-    <p>To ensure the most appropriate data linkage, you must supply an NHS Number, Date of Birth and Postcode if you have them. Otherwise, provide as many pieces of information from the ‘Recommended fields’ section in line with your legal bases and the automated Participant submission table below:</p>
+    <p>To ensure the most appropriate data linkage, you must supply a NHS Number, Date of Birth and Postcode if you have them. Otherwise, provide as many pieces of information from the ‘Recommended fields’ section in line with your legal bases and the automated Participant submission table below:</p>
     <table role="table" class="nhsuk-table-responsive">
   <thead role="rowgroup" class="nhsuk-table__head">
     <tr role="row">
@@ -531,9 +531,17 @@ Linking your Participant data with NHS England’s data
       Date of Birth
       </label>
       </div><div class="nhsuk-u-padding-bottom-3"></div>  
-      </div> 
+      </div>    
+      <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-checkboxes__item">
+      <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+      Postcode
+      </label>
       </div>
-      <div class="nhsuk-u-padding-bottom-4"></div>
+      </div>
+      </div>
+      <div class="nhsuk-u-padding-bottom-7"></div>
       <h4>Recommended fields
       <div class="nhsuk-hint" id="example-hint">
        Providing this information helps ensure better Participant matching. 
@@ -555,26 +563,19 @@ Linking your Participant data with NHS England’s data
       </label>
       </div><div class="nhsuk-u-padding-bottom-3"></div>
       </div>
+
       <div class="nhsuk-grid-column-one-half">
       <div class="nhsuk-checkboxes__item">
       <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
       <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
       Gender
       </label>
-      </div>
-      </div>
-      <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-checkboxes__item">
-      <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
-      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-      Postcode
-      </label>
-      </div>
+      </div> 
       </div>
       </div>
 
 
-       <div class="nhsuk-u-padding-bottom-6"></div>
+       <div class="nhsuk-u-padding-bottom-5"></div>
       <h4>Optional fields
       <div class="nhsuk-hint" id="example-hint">
       If you have it, providing this information will further support Participant Matching. 
@@ -642,7 +643,7 @@ Linking your Participant data with NHS England’s data
   <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
 </div> -->
 
-<p>Using the text box, let us know of any additional, relevant information about your Participant linkage requirements that you have not been able to capture on this page. (Optional)</p>
+<p>Using the text box, let us know of any additional, relevant information about your Participant linkage requirements that you have not been able to capture on this page. (Optional)</p>   
 <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
 
 </form>

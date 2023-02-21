@@ -6,6 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
 
+<style>
+  ul.dashed {counter-reset:list;}
+  ul.dashed {
+        list-style-type: none;
+      }
+      ul.dashed > li {
+        text-indent: -0.2em;
+      }
+      ul.dashed > li:before {
+        content: "-";
+        text-indent: -0.2em;
+      }
+
+</style>
+
 <title>
 DARS - NHS
 </title>
@@ -123,9 +138,6 @@ Guidance
 
 
 
-
-
-
 </ul>
 </div>
 </nav>
@@ -162,46 +174,56 @@ Go back</a>
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
 About the purpose
 </span>
-Processing activities
+What is the objective for processing the data? 
 </h1>
 
 
 <div class="nhsuk-inset-text">
-    <span class="nhsuk-u-visually-hidden">Information: </span>
-    <p><strong>Standard Description:</strong></p>
-    <p>This section of the application shall provide detail on the following:</p>
-
-   <ol>
-        <li> Any flow of data into NHS Digital additionally identifying special categories of personal data such as health data.</li>
-        <li>Any flow of data out of NHS Digital additionally identifying special categories of personal data such as health data.</li>
-        <li>Any subsequent flows of data.</li>
-        <li>Data flows should include detail of the level of data flowing at each stage.</li>
-        <li>Which organisation(s) is/are processing which data at each stage (providing a data flow diagram).</li>
-        <li>How the data is being processed at each stage/what is being done with the data to achieve the stated purpose.</li>
-        <li>Details of any data linkages, or confirmation that data is not linked.</li>
-        <li>Where linkage is permitted, an explanation of what steps are taken to mitigate any risk of reidentification outside of what is permitted by the DSA. Where multiple linkages are permitted the steps taken to mitigate the risk of reidentification should be set out for each stage/linkage.</li>
-        <li>Where data is being matched to publicly available data, an explanation of what steps are taken to mitigate any risk of reidentification outside of what is permitted by the DSA. This does not extend to data made public by the data subject for example via social media.</li>
-        <li>Where applicable, confirmation that there will be no requirement/attempt to re-identify individuals.</li>
-        <li>Confirmation that data processing is only carried out by substantive employees of the data processor(s) and or data controller(s) who have been appropriately trained in data protection and confidentiality.</li>
-        <li>Where data processing is not carried out by substantive employees of the data processor(s) / data controller(s) detail of what contractual arrangements are in place to protect the data which include training in data protection and confidentiality.</li>
-        <li>Detail of how the data is being accessed by anyone accessing the data (secure environment/system access/remote access etc).</li>
-        <li>Where data is stored at premises which are owned by an organisation who is not named in the agreement, the storage arrangements must be explained e.g. the data is stored at X premises. All data stored at organisation X’s premises is held on servers owned/managed by organisation Y (who must be named in the agreement). Organisation X are not able to access the data or servers holding the data.</li>
-        <li>Any special conditions which should be made transparent to the public, should appear in this section (until such time as Special Conditions is published in the data release register). N.B. This does not include inaccessible/detailed conditions, such as small number suppression rules, which should be recorded in the Special Conditions section only.</li>
-    </ol>
+  <span class="nhsuk-u-visually-hidden">Information: </span>
+ Brief information about what we mean by processing activities (ideally up to 3 lines of text)
 </div>
-  
+
+
+
 <div class="nhsuk-form-group">
-    <label class="nhsuk-label" for="example">
-        Processing activities
-      </label>
-    <div class="nhsuk-hint">
-       Recommended length (alternatively a character counter)
-    </div>
-    <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
-  </div>
+  <label class="nhsuk-label" for="example">
+      Provide information in the text box below
+    </label>
+  <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
+</div>
+
+<details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+    Guidance
+    </span>
+  </summary>
+  
+      <p><strong>Standard Description:</strong></p>
+      <p>This section of the application shall provide detail on the following:</p>
+          <ol>
+          <li>Any flow of data into NHS Digital additionally identifying special categories of personal data such as health data.</li>
+          <li>Any flow of data out of NHS Digital additionally identifying special categories of personal data such as health data.</li>
+          <li>Any subsequent flows of data.</li>
+          <li>Data flows should include detail of the level of data flowing at each stage.</li>
+          <li>Which organisation(s) is/are processing which data at each stage (providing a data flow diagram).</li>
+          <li>How the data is being processed at each stage/what is being done with the data to achieve the stated purpose.</li>
+          <li>Details of any data linkages, or confirmation that data is not linked.</li>
+          <li>Where linkage is permitted, an explanation of what steps are taken to mitigate any risk of reidentification outside of what is permitted by the DSA. Where multiple linkages are permitted the steps taken to mitigate the risk of reidentification should be set out for each stage/linkage.</li>
+          <li>Where data is being matched to publicly available data, an explanation of what steps are taken to mitigate any risk of reidentification outside of what is permitted by the DSA. This does not extend to data made public by the data subject for example via social media.</li>
+          <li>Where applicable, confirmation that there will be no requirement/attempt to re-identify individuals.</li>
+          <li>Confirmation that data processing is only carried out by substantive employees of the data processor(s) and or data controller(s) who have been appropriately trained in data protection and confidentiality.</li>
+          <li>Where data processing is not carried out by substantive employees of the data processor(s) / data controller(s) detail of what contractual arrangements are in place to protect the data which include training in data protection and confidentiality.</li>
+          <li>Detail of how the data is being accessed by anyone accessing the data (secure environment/system access/remote access etc).</li>
+          <li>Where data is stored at premises which are owned by an organisation who is not named in the agreement, the storage arrangements must be explained e.g. the data is stored at X premises. All data stored at organisation X’s premises is held on servers owned/managed by organisation Y (who must be named in the agreement). Organisation X are not able to access the data or servers holding the data.</li>
+          <li>Any special conditions which should be made transparent to the public, should appear in this section (until such time as Special Conditions is published in the data release register). N.B. This does not include inaccessible/detailed conditions, such as small number suppression rules, which should be recorded in the Special Conditions section only.</li>
+        </ol>
+    
+    </details>
+
 
 <br /><br />
-<p><a href="/why-you-are-applying/outputs" class="nhsuk-button"> Continue</a><br />
+<p><a href="#" class="nhsuk-button"> Continue</a><br />
 <a href="#">Return to this application later</a></p>
 
 

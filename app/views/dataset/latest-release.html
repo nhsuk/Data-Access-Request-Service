@@ -45,6 +45,9 @@ DARS - NHS
       if(document.getElementById('optiontwo').checked) {
             document.getElementById('linkid').href = "/dataset/frequency";
         }
+        if(document.getElementById('optionfour').checked) {
+            document.getElementById('linkid').href = "/dataset/one-off-regular";
+        }
     }
 </script>
 
@@ -209,7 +212,7 @@ Select all data duration options that are relevant to you. You can select more t
     
         <div class="nhsuk-checkboxes__item">
           <input class="nhsuk-checkboxes__input"name="checkbox" id="optionthree" type="checkbox">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="optionone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-1">
             Year-to-date data
           </label>
           <div class="nhsuk-hint nhsuk-checkboxes__hint" id="nationality-1-item-hint">
@@ -217,8 +220,8 @@ Select all data duration options that are relevant to you. You can select more t
           </div>
         </div>
         <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input"name="checkbox" id="optionthree" type="checkbox">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="optionone">
+          <input class="nhsuk-checkboxes__input"name="checkbox" id="optionfour" type="checkbox">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="nationality-2">
             Latest available 
           </label>
           <div class="nhsuk-hint nhsuk-checkboxes__hint" id="nationality-1-item-hint">

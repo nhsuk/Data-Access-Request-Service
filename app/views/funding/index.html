@@ -169,7 +169,7 @@ Signout
 
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/participants/cohort">
+<a class="nhsuk-back-link__link" href="/">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
@@ -186,14 +186,23 @@ Go back</a>
 <br />
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
 About the Participants</span>
-What type of Participant group?
+Funding source type
 </h1>
 
+<p>Funding source details</p>
 
 <div class="nhsuk-inset-text">
   <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>Select 'New' if you will provide a new list of identified individuals for NHS England to provide data against.</p>
-  <p>Select ‘Existing agreement’ if you are requesting more of the same data or making a change to your Data Sharing Agreement (DSA) application and wish to re-use the list of identified individuals already associated with it. </p>
+  <p>The funding source is relevant as: -</p>
+
+<ul>
+  <li>If publicly funded, it may be that the funding body enables a legal basis to exist for the release of ONS data
+</li>
+<li>If privately funded, the application will need to address any risk of the application being for commercial purposes
+</li>
+<li>If EU funded, typically commercialisation of the research is part of the requirements of funding, and the application will need to demonstrate how such commercialisation is being addressed 
+</li>
+</ul>
 </div>
 
 <div class="nhsuk-form-group">
@@ -204,13 +213,20 @@ What type of Participant group?
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
         <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
-          New
+          Public
         </label>
       </div>
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
         <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
-        Existing agreement (using a Participant group already provided on a previous DSA) 
+        Private
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+        EU / International 
         </label>
       </div>
 
@@ -225,7 +241,7 @@ What type of Participant group?
 
 <div class="nhsuk-u-padding-bottom-9"></div>
 <p>
-<a href="#" class="nhsuk-button" onclick='myFunction()' id="linkid">Continue</a><br />
+<a href="/funding/funding-upload" class="nhsuk-button">Continue</a><br />
 <!--<a href="#">Return to this application later</a>-->
 </p>
 

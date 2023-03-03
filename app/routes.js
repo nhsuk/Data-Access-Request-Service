@@ -7,7 +7,7 @@ const router = express.Router();
 
   // Commercial example
   router.post('/why-you-are-applying/commercial', (req, res) => {
-    // Make a variable and give it the value from 'know-nhs-number'
+    // Make a variable
     const value = req.session.data['example'];
   
     // Check whether the variable matches a condition
@@ -16,7 +16,7 @@ const router = express.Router();
       res.redirect('/why-you-are-applying/commercial-yes');
     } else {
       // Send user to ineligible page
-      res.redirect('/why-you-are-applying/outputs');
+      res.redirect('/why-you-are-applying/sublicensing');
     }
   });
   

@@ -23,7 +23,19 @@ DARS - NHS
 <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
+<script>
+    function myFunction() {
 
+        if(document.getElementById('optionone').checked) {
+            document.getElementById('linkid').href = "/ethics/ethics-approval-yes";
+        }
+
+      if(document.getElementById('optiontwo').checked) {
+            document.getElementById('linkid').href = "/ethics/ethics-approval-no";
+        }
+
+    }
+</script>
 
 
 
@@ -157,7 +169,7 @@ Signout
 
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/funding/funding-upload">
+<a class="nhsuk-back-link__link" href="/">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
@@ -167,85 +179,48 @@ Go back</a>
 
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
 <div class="nhsuk-grid-row">
-<div class="nhsuk-grid-column-full">
+<div class="nhsuk-grid-column-two-thirds">
 
 
 
 <br />
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
-Funding</span>
-Uploaded document 
+Ethics approval</span>
+Does your purpose require ethics approval?
 </h1>
 
 
-<div class="nhsuk-inset-text">
-  <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>Here, you can see the documents you have uploaded</p>
+<div class="nhsuk-form-group">
+
+  <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+    <div class="nhsuk-radios nhsuk-radios--conditional">
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+          Yes
+        </label>
+
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+        No
+        </label>
+      </div>
+
+    </div>
+  </fieldset>
+
 </div>
 
 
-<table role="table" class="nhsuk-table-responsive">
-  <!-- <caption class="nhsuk-table__caption">Ibuprofen tablet dosages for children</caption> -->
-  <thead role="rowgroup" class="nhsuk-table__head">
-    <tr role="row">
-      <th role="columnheader" class="" scope="col">
-        Funding awarding <br/>institution
-      </th>
-      <th role="columnheader" class="" scope="col">
-        EU or international <br/>programme
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Reference and <br/>title of <br/>project and activity
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Year of <br/>submission or <br/>award
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Applicant <br/> or partner
-      </th>
-
-      <th role="columnheader" class="" scope="col">
-
-      </th>
-      <th role="columnheader" class="" scope="col">
-
-      </th>
-    </tr>
-  </thead>
-  <tbody class="nhsuk-table__body">
-    <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Funding awarding </span>Institution
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">EU / international Programme</span>Lorem Ipsum
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Reference and Title of Project and activity</span>Lorem Ipsum
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Year of submission / award</span>22/09/2023
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Applicant or partner</span>Applicant
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading"></span><a href="/funding">Edit</a>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading"></span><a href="#">Delete</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<div class="nhsuk-u-padding-bottom-6"></div>
-<p><a href="#">Add another funding source type</a></p>
 
 
 
 <div class="nhsuk-u-padding-bottom-9"></div>
 <p>
-<a href="/participants/participants-summary-details" class="nhsuk-button">Continue</a><br />
+<a href="#" class="nhsuk-button" onclick='myFunction()' id="linkid">Continue</a><br />
 <!--<a href="#">Return to this application later</a>-->
 </p>
 

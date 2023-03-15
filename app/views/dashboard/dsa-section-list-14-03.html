@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -23,16 +23,7 @@ DARS - NHS
 <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
-<style type="text/css">
-    .statuses-nhs-tag {
-float: left !important;
 
-}
-.l-signout{
-  float: right !important; 
-  color: #fff !important;
-}
-</style>
 </head>
 <body class="">
 
@@ -52,7 +43,7 @@ Data Access Request Service
 </a>
 </div>
 
-<div class="l-pro-signlink">Janey Mcgregor&nbsp;&nbsp;&nbsp;<a href="/dashboard/sign-out" class="l-signout">Sign out</a></div>
+<div class="l-pro-signlink">Janey Mcgregor&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout">Sign out</a></div>
 
 <div class="nhsuk-header__content" id="content-header">
 
@@ -230,8 +221,8 @@ Application for a Data Sharing Agreement</h1>
 <a href="/dashboard/controller">About the Controller </a>
 </td>
 <td class="nhsuk-table__cell ">
-<strong class="nhsuk-tag nhsuk-tag--blue">
-IN&nbsp;PROGRESS
+<strong class="nhsuk-tag nhsuk-tag--white">
+Not started
 </strong>
 
 </td>
@@ -240,7 +231,7 @@ IN&nbsp;PROGRESS
 <td class="nhsuk-table__cell">
 <a href="#">About the Processor</a>
 </td>
-<td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> IN&nbsp;PROGRESS</strong></td>
+<td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>
 </tr>
 <tr class="nhsuk-table__row">
 <td class="nhsuk-table__cell"><a href="/about-the-processor/">Processing and Storage Locations</a></td>
@@ -262,25 +253,35 @@ IN&nbsp;PROGRESS
 <tbody class="nhsuk-table__body">
 <tr class="nhsuk-table__row section-list-border-tp">
 <td class="nhsuk-table__cell">
-<a href="#">
-Data request reason and project name</a>
+<a href="#">Project title and reason</a>
 </td>
 <td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>
 </tr>
 <tr class="nhsuk-table__row">
-<td class="nhsuk-table__cell"><a href="#">Objective(s) and processing activities</a></td>
+<td class="nhsuk-table__cell"><a href="#">Commercial implications </a></td>
 <td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>
 </tr>
 
 <tr class="nhsuk-table__row">
-<td class="nhsuk-table__cell"><a href="#">Expected outputs and benefits</a></td>
+<td class="nhsuk-table__cell"><a href="#">Why we are processing the data</a></td>
 <td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>
 </tr>
 
 <tr class="nhsuk-table__row">
- <td class="nhsuk-table__cell"><a href="#">Commercial purposes and sub-licensing</a></td> 
+ <td class="nhsuk-table__cell"><a href="#">Our processing activities</a></td> 
 <td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>
 </tr>
+
+<tr class="nhsuk-table__row">
+ <td class="nhsuk-table__cell"><a href="#">Expected outcomes</a></td> 
+ <td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>
+</tr>
+
+<tr class="nhsuk-table__row">
+ <td class="nhsuk-table__cell"><a href="#">Expected benefits</a></td> 
+ <td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>
+</tr>
+
 
 </tbody>
 </table>
@@ -298,13 +299,14 @@ Data request reason and project name</a>
 
 <p>We must ensure that the requested type of data aligns with your reason for requesting it and meets the requirement to process data lawfully, fairly and transparently.  </p>
 
+
 <table class="nhsuk-table section-list-no-border">
 <tbody class="nhsuk-table__body">
   <tr class="nhsuk-table__row"><td class="nhsuk-table__cell">About the participants</td><td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td></tr>
 <tr class="nhsuk-table__row section-list-border-tp">
 <td class="nhsuk-table__cell"><a href="/dataset">About the data</a></td><td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td></tr>
-<!-- <tr class="nhsuk-table__row"><td class="nhsuk-table__cell"><a href="/dataset/data-minimisation">Data set filters</a></td><td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>
-</tr> -->
+<tr class="nhsuk-table__row"><td class="nhsuk-table__cell"><a href="/dataset/data-minimisation">Data set filters</a></td><td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>
+</tr>
 
 </tbody>
 </table>
@@ -316,13 +318,13 @@ Data request reason and project name</a>
 
 <table class="nhsuk-table section-list-no-border">
 <tbody class="nhsuk-table__body">
-<!-- <tr class="nhsuk-table__row section-list-border-tp">
+<tr class="nhsuk-table__row section-list-border-tp">
 <td class="nhsuk-table__cell">
 Estimated cost
 </td>
 <td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>
 </tr>
- -->
+
 <tr class="nhsuk-table__row">
 <td class="nhsuk-table__cell">List of uploaded documents</td>
 <td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Not started</strong></td>

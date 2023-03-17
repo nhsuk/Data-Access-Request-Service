@@ -7,7 +7,7 @@
 <meta name="description" content="">
 
 <title>
-DARS - NHS   
+DARS - NHS
 </title>
 
 <link href="https://www.nhs.uk/" rel="preconnect">
@@ -27,19 +27,11 @@ DARS - NHS
     function myFunction() {
 
         if(document.getElementById('optionone').checked) {
-            document.getElementById('linkid').href = "/storage/uk";
+            document.getElementById('linkid').href = "/list-of-docs/list-of-docs-uploaded";
         }
 
       if(document.getElementById('optiontwo').checked) {
-            document.getElementById('linkid').href = "/storage/eea";
-        }
-
-        if(document.getElementById('optionthree').checked) {
-            document.getElementById('linkid').href = "/storage/worldwide";
-        }
-
-        if(document.getElementById('optionfour').checked) {
-            document.getElementById('linkid').href = "/storage/eng";
+            document.getElementById('linkid').href = "/list-of-docs/type-of-evidence";
         }
 
     }
@@ -160,13 +152,11 @@ Signout
 
 
 
-
 </ul>
 </div>
 </nav>
 
 </header>
-
 <nav class="nhsuk-breadcrumb app-breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
@@ -176,115 +166,88 @@ Signout
   </div>
 </nav>
 
-
-
-<div class="nhsuk-width-container ">
+<div class="nhsuk-width-container">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/processing-location/data-processing-location">
+<a class="nhsuk-back-link__link" href="/processing-location/data-processing-location-added">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
 Go back</a>
 </div>        
 
-<br/>
+
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
 <div class="nhsuk-grid-row">
 <div class="nhsuk-grid-column-two-thirds">
 
 
+
+
+
+
+
+
+<br />  
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
-Processing Locations
-</span>Please add ALL data processing locations to your application.
-</h1><br/>
+Processing Locations</span>
+Are you sure you want to delete this Processing location?
 
 
-<table role="table" class="nhsuk-table-responsive">
-  <!-- <caption class="nhsuk-table__caption">Ibuprofen tablet dosages for children</caption> -->
-  <thead role="rowgroup" class="nhsuk-table__head">
-    <tr role="row">
-      <th role="columnheader" class="" scope="col">
-        Organisation <br />name
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Address 1
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Address 2
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Address 3
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Town/City
-      </th>
-      <th role="columnheader" class="" scope="col">
-        County
-      </th>
-       <th role="columnheader" class="" scope="col">
-        Postcode
-      </th>
-       <th role="columnheader" class="" scope="col">
-        Country
-      </th>
 
-      <th role="columnheader" class="" scope="col">
 
-      </th>
-      <th role="columnheader" class="" scope="col">
+</h1>
 
-      </th>
-    </tr>
-  </thead>
-  <tbody class="nhsuk-table__body">
-    <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Organisation name </span>University of oxford
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Address 1 </span>Lorem Ipsum
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Address 2</span>Lorem Ipsum
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Address 3</span>Lorem Ipsum
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Address 4</span>Lorem Ipsum
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">County </span>Greater London
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Postcode </span>AB1 2CD
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Country </span>United Kingdom
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading"></span><a href="/funding">Edit</a>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading"></span><a href="/processing-location/delete">Delete</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="nhsuk-form-group">
 
-<div class="nhsuk-u-padding-bottom-6"></div>
-<p><a href="/processing-location">Add another data processing locations</a></p>
+  <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+    <div class="nhsuk-radios nhsuk-radios--conditional">
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+          Yes
+        </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          If you select yes, uploaded document will be removed.  
+        </div>
+        
+      </div>
+
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+        No
+        </label>
+      </div>
+
+    </div>
+  </fieldset>
+
+</div>
+
+
+
+
 
 <br /><br />
-<p><a href="/dsa-section-list" class="nhsuk-button nhsuk-button-save-continue bt-save-continue"> Continue</a></p>
+<p><a href="" class="nhsuk-button nhsuk-button-save-continue bt-save-continue" onclick='myFunction()' id="linkid"> Continue</a><br />
+<!--<a href="#">Return to this application later</a>--></p>
 
 
-  
+
+
+
+
+
+
 
 </div>  
 </div>
 </main>
 </div>
+
+
 
 
 
@@ -306,6 +269,10 @@ Processing Locations
     </div>
   </div>
 </footer>
+
+
+
+
 
 
 

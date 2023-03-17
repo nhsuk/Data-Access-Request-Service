@@ -27,19 +27,24 @@ DARS - NHS
     function myFunction() {
 
         if(document.getElementById('optionone').checked) {
-            document.getElementById('linkid').href = "/ethics/ethics-approval-yes";
+            document.getElementById('linkid').href = "/about-the-controller/dspt-details";
         }
 
       if(document.getElementById('optiontwo').checked) {
-            document.getElementById('linkid').href = "/ethics/ethics-approval-no";
+            document.getElementById('linkid').href = "/about-the-controller/iso";
+        }
+
+      if(document.getElementById('optionthree').checked) {
+            document.getElementById('linkid').href = "/about-the-controller/slsp";
         }
 
     }
 </script>
-
-
-
-
+<style type="text/css">
+  .bt-save-continue{
+  color: #fff !important;
+}
+</style>
 </head>
 <body class="">
 
@@ -59,7 +64,7 @@ Data Access Request Service
 </a>
 </div>
 
-<div class="l-pro-signlink">Janey Mcgregor&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout">Sign out</a></div>
+<div class="l-pro-signlink">Janey Mcgregor&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout singout-clr-wht">Sign out</a></div>
 
 <div class="nhsuk-header__content" id="content-header">
 
@@ -157,24 +162,25 @@ Signout
 </nav>
 
 </header>
+
 <nav class="nhsuk-breadcrumb app-breadcrumb">
-<div class="nhsuk-width-container">
-<ol class="nhsuk-breadcrumb__list">
-<li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-209174-W2H3G</li>
-<li class="nhsuk-breadcrumb__item" style="float: right;"><strong>Total Estimated Cost:</strong> £1234.50</li>
-</ol>
-</div>
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-209174-W2H3G</li>
+      <li class="nhsuk-breadcrumb__item" style="float: right;"><strong>Total Estimated Cost:</strong> £1234.50</li>
+    </ol>
+  </div>
 </nav>
 
 
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/dsa-section-list">
+<a class="nhsuk-back-link__link" href="/about-the-controller/sign-dsa">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
 Go back</a>
-</div>   
+</div>        
 
 
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
@@ -183,11 +189,30 @@ Go back</a>
 
 
 
+
+
+
+
+
 <br />
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
-Ethics approval</span>
-Does your purpose require ethics approval?
-</h1>
+About the Controller</span>
+What security assurance will you provide for this Controller?</h1>
+
+<div class="nhsuk-inset-text">
+  <span class="nhsuk-u-visually-hidden">Information: </span>
+  <p>For a Controller to be given access to data from NHS Digital, they must provide security assurance. </p>
+  <p>Before making your selection below, if you are an organisation that has access to NHS patient data, select ‘Data Security and Protection Toolkit (DSPT)’. The DSPT is considered ‘standard’ security assurance and the option that is most frequently selected. </p>
+<!--   <p>You should only select ‘System Level Security Policy (SLSP)’ in exceptional circumstances. Contact <a href="#">Data.applications@nhsdigital.nhs.uk</a> before selecting this option.</p>
+  <p>If you don’t know what security assurance to provide, contact your Data Protection Officer (DPO) or Information Governance (IG) team for help.</p> -->
+
+</div>
+
+
+
+
+
+
 
 
 <div class="nhsuk-form-group">
@@ -198,17 +223,31 @@ Does your purpose require ethics approval?
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
         <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
-          Yes
+          Data Security and Protection Toolkit (DSPT)
         </label>
-
       </div>
+
+
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
         <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
-        No
+         ISO/IEC 27001 Information Security management standard 
         </label>
       </div>
 
+      <div class="nhsuk-radios__divider">or</div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionthree" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-3">
+          System Level Security Policy (SLSP)
+        </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
+         <p>You should only select ‘System Level Security Policy (SLSP)’ in exceptional circumstances. Contact <a href="#">Data.applications@nhsdigital.nhs.uk</a> before selecting this option. Your NIC number will appear in the subject field for reference. </p>
+         <p>If you don’t know what security assurance to provide, contact your Data Protection Officer (DPO) or Information Governance (IG) team for help.</p>
+         <p>If you don’t think you have security assurance, contact your Case Officer. </p>
+        </div>
+      </div>
     </div>
   </fieldset>
 
@@ -218,11 +257,28 @@ Does your purpose require ethics approval?
 
 
 
-<div class="nhsuk-u-padding-bottom-9"></div>
-<p>
-<a href="#" class="nhsuk-button" onclick='myFunction()' id="linkid">Continue</a><br />
-<!--<a href="#">Return to this application later</a>-->
-</p>
+
+<br /><br />
+<p><a href="" class="nhsuk-button nhsuk-button-save-continue bt-save-continue" onclick='myFunction()' id="linkid"> Continue</a><br />
+<!--<a href="#">Return to this application later</a>--></p>
+
+
+<!-- 
+<br />
+
+<details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Some information about security assurance
+    </span>
+  </summary>
+
+<div class="nhsuk-details__text">
+    <p>If you don’t know what security assurance to provide, contact your Data Protection Officer (DPO) or Information Governance (IG) team to clarify</p>
+  </div>
+</details> -->
+
+
 
 
 </div>  
@@ -233,23 +289,25 @@ Does your purpose require ethics approval?
 
 
 
+
+
 <footer role="contentinfo">
-<div class="nhsuk-footer" id="nhsuk-footer">
-<div class="nhsuk-width-container">
-<h2 class="nhsuk-u-visually-hidden">Support links</h2>
-<ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
-<li class="nhsuk-footer__list-item"><a href="/about-us" class="nhsuk-footer__list-item-link" target="_blank">About us</a></li>
-<li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility</a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/contact-us/freedom-of-information" class="nhsuk-footer__list-item-link" target="_blank">Freedom of information</a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/privacy-and-cookies" class="nhsuk-footer__list-item-link" target="_blank">Privacy and cookies</a></li>
-<li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
-<li class="nhsuk-footer__list-item"><a href="/contact-us" class="nhsuk-footer__list-item-link" target="_blank">Contact us </a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/terms-and-conditions" class="nhsuk-footer__list-item-link" target="_blank">Terms and conditions </a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/data" class="nhsuk-footer__list-item-link" target="_blank">Data</a></li>
-</ul>
-<p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
-</div>
-</div>
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="/about-us" class="nhsuk-footer__list-item-link" target="_blank">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/contact-us/freedom-of-information" class="nhsuk-footer__list-item-link" target="_blank">Freedom of information</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/privacy-and-cookies" class="nhsuk-footer__list-item-link" target="_blank">Privacy and cookies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
+        <li class="nhsuk-footer__list-item"><a href="/contact-us" class="nhsuk-footer__list-item-link" target="_blank">Contact us </a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/terms-and-conditions" class="nhsuk-footer__list-item-link" target="_blank">Terms and conditions </a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/data" class="nhsuk-footer__list-item-link" target="_blank">Data</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
 </footer>
 
 
@@ -261,7 +319,8 @@ Does your purpose require ethics approval?
 <script src="/js/jquery-3.5.1.min.js"></script>
 <script src="/js/main.js"></script>
 
-<script src="/js/auto-store-data.js"></script>
+
+
 
 
 </body>

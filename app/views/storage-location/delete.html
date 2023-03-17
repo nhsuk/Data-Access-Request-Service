@@ -27,19 +27,20 @@ DARS - NHS
     function myFunction() {
 
         if(document.getElementById('optionone').checked) {
-            document.getElementById('linkid').href = "/ethics/ethics-approval-yes";
+            document.getElementById('linkid').href = "/storage-location/";
         }
 
       if(document.getElementById('optiontwo').checked) {
-            document.getElementById('linkid').href = "/ethics/ethics-approval-no";
+            document.getElementById('linkid').href = "/storage-location/data-storage-location-added";
         }
 
     }
 </script>
-
-
-
-
+<style type="text/css">
+  .bt-save-continue{
+  color: #fff !important;
+}
+</style>
 </head>
 <body class="">
 
@@ -59,7 +60,7 @@ Data Access Request Service
 </a>
 </div>
 
-<div class="l-pro-signlink">Janey Mcgregor&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout">Sign out</a></div>
+<div class="l-pro-signlink">Janey Mcgregor&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout singout-clr-wht">Sign out</a></div>
 
 <div class="nhsuk-header__content" id="content-header">
 
@@ -151,30 +152,28 @@ Signout
 
 
 
-
 </ul>
 </div>
 </nav>
 
 </header>
 <nav class="nhsuk-breadcrumb app-breadcrumb">
-<div class="nhsuk-width-container">
-<ol class="nhsuk-breadcrumb__list">
-<li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-209174-W2H3G</li>
-<li class="nhsuk-breadcrumb__item" style="float: right;"><strong>Total Estimated Cost:</strong> £1234.50</li>
-</ol>
-</div>
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-209174-W2H3G</li>
+      <li class="nhsuk-breadcrumb__item" style="float: right;"><strong>Total Estimated Cost:</strong> £1234.50</li>
+    </ol>
+  </div>
 </nav>
 
-
-<div class="nhsuk-width-container ">
+<div class="nhsuk-width-container">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/dsa-section-list">
+<a class="nhsuk-back-link__link" href="/processing-location/data-processing-location-added">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
 Go back</a>
-</div>   
+</div>        
 
 
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
@@ -183,12 +182,16 @@ Go back</a>
 
 
 
-<br />
-<h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
-Ethics approval</span>
-Does your purpose require ethics approval?
-</h1>
 
+
+
+
+
+<br />  
+<h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
+Storage Locations</span>
+Are you sure you want to delete details of the organisation managing the data processing?
+</h1>
 
 <div class="nhsuk-form-group">
 
@@ -200,8 +203,11 @@ Does your purpose require ethics approval?
         <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
           Yes
         </label>
-
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          If you select yes, details of the organisation managing the data processing will be removed. 
+        </div>
       </div>
+
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
         <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
@@ -218,11 +224,16 @@ Does your purpose require ethics approval?
 
 
 
-<div class="nhsuk-u-padding-bottom-9"></div>
-<p>
-<a href="#" class="nhsuk-button" onclick='myFunction()' id="linkid">Continue</a><br />
-<!--<a href="#">Return to this application later</a>-->
-</p>
+<br /><br />
+<p><a href="" class="nhsuk-button nhsuk-button-save-continue bt-save-continue" onclick='myFunction()' id="linkid"> Continue</a><br />
+<!--<a href="#">Return to this application later</a>--></p>
+
+
+
+
+
+
+
 
 
 </div>  
@@ -233,23 +244,24 @@ Does your purpose require ethics approval?
 
 
 
+
 <footer role="contentinfo">
-<div class="nhsuk-footer" id="nhsuk-footer">
-<div class="nhsuk-width-container">
-<h2 class="nhsuk-u-visually-hidden">Support links</h2>
-<ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
-<li class="nhsuk-footer__list-item"><a href="/about-us" class="nhsuk-footer__list-item-link" target="_blank">About us</a></li>
-<li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility</a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/contact-us/freedom-of-information" class="nhsuk-footer__list-item-link" target="_blank">Freedom of information</a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/privacy-and-cookies" class="nhsuk-footer__list-item-link" target="_blank">Privacy and cookies</a></li>
-<li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
-<li class="nhsuk-footer__list-item"><a href="/contact-us" class="nhsuk-footer__list-item-link" target="_blank">Contact us </a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/terms-and-conditions" class="nhsuk-footer__list-item-link" target="_blank">Terms and conditions </a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/data" class="nhsuk-footer__list-item-link" target="_blank">Data</a></li>
-</ul>
-<p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
-</div>
-</div>
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="/about-us" class="nhsuk-footer__list-item-link" target="_blank">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/contact-us/freedom-of-information" class="nhsuk-footer__list-item-link" target="_blank">Freedom of information</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/privacy-and-cookies" class="nhsuk-footer__list-item-link" target="_blank">Privacy and cookies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
+        <li class="nhsuk-footer__list-item"><a href="/contact-us" class="nhsuk-footer__list-item-link" target="_blank">Contact us </a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/terms-and-conditions" class="nhsuk-footer__list-item-link" target="_blank">Terms and conditions </a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/data" class="nhsuk-footer__list-item-link" target="_blank">Data</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
 </footer>
 
 
@@ -257,11 +269,6 @@ Does your purpose require ethics approval?
 
 
 
-<!-- Custom JavaScript files can be added to this file -->
-<script src="/js/jquery-3.5.1.min.js"></script>
-<script src="/js/main.js"></script>
-
-<script src="/js/auto-store-data.js"></script>
 
 
 </body>

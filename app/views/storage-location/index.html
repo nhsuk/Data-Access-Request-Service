@@ -7,7 +7,7 @@
 <meta name="description" content="">
 
 <title>
-DARS - NHS
+DARS - NHS   
 </title>
 
 <link href="https://www.nhs.uk/" rel="preconnect">
@@ -23,7 +23,32 @@ DARS - NHS
 <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
+<script>
+    function myFunction() {
 
+        if(document.getElementById('optionone').checked) {
+            document.getElementById('linkid').href = "/storage/uk";
+        }
+
+      if(document.getElementById('optiontwo').checked) {
+            document.getElementById('linkid').href = "/storage/eea";
+        }
+
+        if(document.getElementById('optionthree').checked) {
+            document.getElementById('linkid').href = "/storage/worldwide";
+        }
+
+        if(document.getElementById('optionfour').checked) {
+            document.getElementById('linkid').href = "/storage/eng";
+        }
+
+    }
+</script>
+<style type="text/css">
+  .bt-save-continue{
+  color: #fff !important;
+}
+</style>
 </head>
 <body class="">
 
@@ -151,192 +176,106 @@ Signout
   </div>
 </nav>
 
+
+
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/about-the-controller/security-assurance">
+<a class="nhsuk-back-link__link" href="/processing-location">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
 Go back</a>
 </div>        
 
-
+<br/>
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
 <div class="nhsuk-grid-row">
 <div class="nhsuk-grid-column-two-thirds">
 
 
-
-
-
-
-
-
-<br />
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
-About the Controller</span>
-Data Security and Protection Toolkit details</h1>
+Processing Locations
+</span>Where will you process data covered by this Data Sharing Agreement?</h1><br/>
 
+<p>Notes for jess</p>
+<p>Region for data processing location</p>
+<p>Please record all addresses where data will be stored, including disaster recovery sites.</p>
+<details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Guidance
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>Standard Description: Processing means an operation or set of operations which is performed on information. For the avoidance of doubt, storage of data is considered to be a type of processing(6). As such, all agreements must include the following information:</p>
+    <p>Storage locations</p>
+    <p>1. All organisations related to the location stated must either be listed on the application as a processor, or as a controller who processes, or be NHS Digital (e.g. online system access).2. The application must list the full postal address of all storage locations. The postal address given must include details of any other organisation if appropriate, and this must be clearly explained in the purpose section of the application.3. Each storage location must be within the territory of use stated in the agreement.</p>
 
-<div class="nhsuk-inset-text">
-  <span class="nhsuk-u-visually-hidden">Information: </span>
-<p>Your selected DSPT must match the DSPT information we have on record for your organisation. If these do not match it may lead to a delay in the acceptance of your application. </p>
-<p>Each department within a university can have a different security policy depending on the type of information they access. Universities can have multiple DSPTs across their organisation, usually split between schools and departments. If the organisation is a university and you are not sure which one to add, contact your Data Protection Officer (DPO) or Information Governance (IG) team for help. </p>
+    <p>NHS Digital online system access</p>
+    <p>1. Where NHS Digital are providing online system access NHS Digital will not be listed as a processor, processing location or storage location in the agreement. 2. Controllers and all other processors will be detailed in the application as set out above.</p>
 
-  <p>Find the Data Security and Protection Toolkit (DSPT) status and supporting information for the organisation on the <a href="https://www.dsptoolkit.nhs.uk/OrganisationSearch" title="External website" target="_blank">DSPT organisation search (opens in a new window)</a> </p>
+    <p>Remote access</p>
+    <p>1. Where the processing of the data is only carried out at the storage location and only a screen view of the data is provided to the remote device then the remote device location need not be listed as a processing location. 2. In all other situations all locations must be explicitly stated within the agreement. 3. In both cases data can only be accessed/viewed within the stated territory of use.</p>
+    <p>Please note that this standard will be uplifted shortly for requirements where Cloud storage/processing is occurring.</p>
+    <p>(6) Data Protection Act 2018, Part 1, Section 3(4)(a).</p>
 
-
-  <p>If you need further help, email <a href="#">exeter.helpdesk@nhs.net</a>. The email will open with your NIC number and ‘DSPT - DARS Online Application Issue’ in the subject field.</p>
-  <p>Selecting the exeter.helpdesk email address will drop the <a href="#">data.applications@nhsdigital.nhs.uk</a> email address in the ‘To’ field of your email. Keeping the data applications team informed in this way will help to enable a smooth application process.  </p>
-</div>
-
-
-<div class="nhsuk-form-group">
-  <label class="nhsuk-label" for="input-width-20">
-   Organisation's Data Service (ODS) code 
-  </label>
-  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
-</div>
-
-
-<br />
-<fieldset class="nhsuk-fieldset">
-<label class="nhsuk-label" for="example-with-hint-text">
-   Status
-  </label>
-<div class="nhsuk-form-group">
-
-    <div class="nhsuk-radios">
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-          Entry level
-        </label>
-      </div>
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-          Baseline
-        </label>
-      </div>
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-          Not published
-        </label>
-      </div>
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
-         Standards not met
-        </label>
-      </div>
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="not sure">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
-         Approaching standards
-        </label>
-      </div>
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="not sure">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
-         Standards met
-        </label>
-      </div>
-
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="not sure">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
-         Standards exceeded
-        </label>
-      </div>
-
-    </div>
   </div>
-
-</fieldset>
+</details>
 
 <br />
+
 <div class="nhsuk-form-group">
-  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-<label class="nhsuk-label" for="example-with-hint-text">
-   Date published
-  </label>
-    <div class="nhsuk-hint" id="example-hint">
-      For example, 31 3 2022
+
+  <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+    <div class="nhsuk-radios nhsuk-radios--conditional">
+
+      <div class="nhsuk-hint" id="contact-hint">
+      Select one option to tell us where you will process the data (territory of use)
     </div>
 
-    <div class="nhsuk-date-input" id="example">
-      <div class="nhsuk-date-input__item">
-        <div class="nhsuk-form-group">
-          <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-            Day
-          </label>
-          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example-day" type="text" pattern="[0-9]*" inputmode="numeric">
-        </div>
+    <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionfour" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+          England and Wales
+        </label>
       </div>
-      <div class="nhsuk-date-input__item">
-        <div class="nhsuk-form-group">
-          <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-            Month
-          </label>
-          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example-month" type="text" pattern="[0-9]*" inputmode="numeric">
-        </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+          UK
+        </label>
       </div>
-      <div class="nhsuk-date-input__item">
-        <div class="nhsuk-form-group">
-          <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-            Year
-          </label>
-          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="text" pattern="[0-9]*" inputmode="numeric">
-        </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+        EEA
+        </label>
       </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionthree" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-3">
+        Worldwide
+        </label>
+      </div>
+
     </div>
   </fieldset>
 
 </div>
-<br />
 
-
-<div class="nhsuk-form-group">
-  <label class="nhsuk-label" for="example">
-    Additional DSPT submission (Optional)
-  </label>
-  <div class="nhsuk-hint" id="example-hint">
-    If there is more than one school or department within the university that will be involved in the agreement, you must add them to the application. You can do this using the link below. 
-  </div>
-  <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
-</div>
 
 <br /><br />
-
-<p><a href="/about-the-controller/data-protection-registration" class="nhsuk-button nhsuk-button-save-continue"> Continue</a><br />
-<!-- <p><a href="/about-the-controller/summary-of-all-dspt-details" class="nhsuk-button nhsuk-button-save-continue"> Continue</a><br /> -->
-<!--<a href="#">Return to this application later</a>--></p>
+<p><a href="/processing-location/data-processing-location" class="nhsuk-button nhsuk-button-save-continue"> Continue</a><br /></p>
 
 
-
-<br />
-
-
-
-
-
-
-
+  
 
 </div>  
 </div>
 </main>
 </div>
-
 
 
 
@@ -358,10 +297,6 @@ Data Security and Protection Toolkit details</h1>
     </div>
   </div>
 </footer>
-
-
-
-
 
 
 

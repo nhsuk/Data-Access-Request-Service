@@ -176,10 +176,13 @@ Go back</a>
 <br />
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
 About the Processor</span>
-What security assurance will you provide for this Processor?</h1>
+What security assurance will you provide for this Processor? </h1>
 
 <div class="nhsuk-hint" id="example-with-hint-text-hint">
-For a Processor to be given access to data from NHS England, you must provide security assurance.   </div>
+<p>For a Processor to be given access to data from NHS England, you must provide security assurance.
+</p>
+<p>Before making your selection below, if you are an organisation that has access to NHS patient data, select ‘Data Security and Protection Toolkit (DSPT)’.The DSPT is considered ‘standard’ security assurance and the option that is most frequently selected. </p>
+</div>
 <br />
 
 
@@ -189,7 +192,7 @@ For a Processor to be given access to data from NHS England, you must provide se
     <div class="nhsuk-radios nhsuk-radios--conditional">
 
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+        <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
         <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
           Data Security and Protection Toolkit (DSPT)
         </label>
@@ -197,13 +200,25 @@ For a Processor to be given access to data from NHS England, you must provide se
 
 
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+        <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
         <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
          ISO/IEC 27001 Information Security management standard 
         </label>
       </div>
 
+      <div class="nhsuk-radios__divider">or</div>
 
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionthree" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-3">
+          System Level Security Policy (SLSP)
+        </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
+         <p>You should only select ‘System Level Security Policy (SLSP)’ in exceptional circumstances. Contact <a href="#">data.applications@nhsdigital.nhs.uk</a> (opens in a new window) before selecting this option. Your NIC number will appear in the subject field for reference. </p>
+         <p>If you don’t know what security assurance to provide, contact your Data Protection Officer (DPO) or Information Governance (IG) team for help.</p>
+         <p>If you don’t think you have security assurance, contact <a href="#">data.applications@nhsdigital.nhs.uk</a> (opens in a new window).</p>
+        </div>
+      </div>
     </div>
   </fieldset>
 

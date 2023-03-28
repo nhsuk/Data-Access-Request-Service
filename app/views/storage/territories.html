@@ -7,7 +7,7 @@
 <meta name="description" content="">
 
 <title>
-DARS - NHS
+DARS - NHS   
 </title>
 
 <link href="https://www.nhs.uk/" rel="preconnect">
@@ -23,11 +23,32 @@ DARS - NHS
 <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
+<script>
+    function myFunction() {
 
+        if(document.getElementById('optionone').checked) {
+            document.getElementById('linkid').href = "/storage/uk";
+        }
 
+      if(document.getElementById('optiontwo').checked) {
+            document.getElementById('linkid').href = "/storage/eea";
+        }
 
+        if(document.getElementById('optionthree').checked) {
+            document.getElementById('linkid').href = "/storage/worldwide";
+        }
 
+        if(document.getElementById('optionfour').checked) {
+            document.getElementById('linkid').href = "/storage/eng";
+        }
 
+    }
+</script>
+<style type="text/css">
+  .bt-save-continue{
+  color: #fff !important;
+}
+</style>
 </head>
 <body class="">
 
@@ -47,7 +68,7 @@ Data Access Request Service
 </a>
 </div>
 
-<div class="l-pro-signlink">Janey Mcgregor&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout">Sign out</a></div>
+<div class="l-pro-signlink">Janey Mcgregor&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout singout-clr-wht">Sign out</a></div>
 
 <div class="nhsuk-header__content" id="content-header">
 
@@ -145,81 +166,116 @@ Signout
 </nav>
 
 </header>
+
 <nav class="nhsuk-breadcrumb app-breadcrumb">
-<div class="nhsuk-width-container">
-<ol class="nhsuk-breadcrumb__list">
-<li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-209174-W2H3G</li>
-<li class="nhsuk-breadcrumb__item" style="float: right;"><strong>Total Estimated Cost:</strong> £1234.50</li>
-</ol>
-</div>
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-209174-W2H3G</li>
+      <li class="nhsuk-breadcrumb__item" style="float: right;"><strong>Total Estimated Cost:</strong> £1234.50</li>
+    </ol>
+  </div>
 </nav>
+
 
 
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/identifiable-data/legal-bases-identifiable-data">
+<a class="nhsuk-back-link__link" href="/dsa-section-list">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
 Go back</a>
-</div>   
+</div>        
 
-
+<br/>
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
 <div class="nhsuk-grid-row">
 <div class="nhsuk-grid-column-two-thirds">
 
 
-
-<br />
-<h1><!-- <span class="nhsuk-caption-l nhsuk-caption--bottom ">
-Identifiable Data</span> -->
-Mixture of confidential data flow(s) with consent and flow(s) with support under Section 251 of the NHS Act 2006
-</h1>
+<h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
+Territories Locations
+</span>Where will you store data covered by this Data Sharing Agreement?</h1>
 
 
-<!-- <div class="nhsuk-inset-text">
+<div class="nhsuk-inset-text">
   <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>Lorem Ipsum</p>
-</div> -->
-
-<div class="nhsuk-form-group">
-  <label class="nhsuk-label" for="input-width-10">
-    Document name 
-  </label>
-  <div class="nhsuk-hint" id="example-with-hint-text-hint">
-    Provide the document name in the text box below 
-  <input class="nhsuk-input nhsuk-input--width-10" id="example-with-hint-text" name="example-with-hint-text" type="text" aria-describedby="example-with-hint-text-hint" inputmode="numeric">
+  <p>Processing means an operation or set of operations which is performed on information. Storage of data is a type of processing.</p>
 </div>
+
+
+
+<!-- <details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Guidance
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>Standard Description: Processing means an operation or set of operations which is performed on information. For the avoidance of doubt, storage of data is considered to be a type of processing(6). As such, all agreements must include the following information:</p>
+    <p>Storage locations</p>
+    <p>1. All organisations related to the location stated must either be listed on the application as a processor, or as a controller who processes, or be NHS Digital (e.g. online system access).2. The application must list the full postal address of all storage locations. The postal address given must include details of any other organisation if appropriate, and this must be clearly explained in the purpose section of the application.3. Each storage location must be within the territory of use stated in the agreement.</p>
+
+    <p>NHS Digital online system access</p>
+    <p>1. Where NHS Digital are providing online system access NHS Digital will not be listed as a processor, processing location or storage location in the agreement. 2. Controllers and all other processors will be detailed in the application as set out above.</p>
+
+    <p>Remote access</p>
+    <p>1. Where the processing of the data is only carried out at the storage location and only a screen view of the data is provided to the remote device then the remote device location need not be listed as a processing location. 2. In all other situations all locations must be explicitly stated within the agreement. 3. In both cases data can only be accessed/viewed within the stated territory of use.</p>
+    <p>Please note that this standard will be uplifted shortly for requirements where Cloud storage/processing is occurring.</p>
+    <p>(6) Data Protection Act 2018, Part 1, Section 3(4)(a).</p>
+
+  </div>
+</details> -->
+
 <br />
 
-
 <div class="nhsuk-form-group">
-<label class="nhsuk-label" for="file-upload-1">
-<p>Document required</p>
-</label>
-<details class="nhsuk-details" open>
-<summary class="nhsuk-details__summary">
-<span class="nhsuk-details__summary-text">
-View file guidance
-</span>
-</summary>
 
-<div class="nhsuk-details__text">
-<p>A file should not exceed 3 MB and should be one of the following acceptable file formats: PDF, Word, Excel</p>
+  <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+    <div class="nhsuk-radios nhsuk-radios--conditional">
+
+      <div class="nhsuk-hint" id="contact-hint">
+      Select one option to tell us where you will process the data (territory of use)
+    </div>
+
+    <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionfour" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+          England and Wales
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+          UK
+        </label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+        EEA
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionthree" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-3">
+        Worldwide
+        </label>
+      </div>
+
+    </div>
+  </fieldset>
+
 </div>
-</details>
-<br />
-<input class="nhsuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
-</div>
-<p><a class="nhsuk-button nhsuk-button--secondary" type="submit" href="#">Upload</a></p>
 
-<div class="nhsuk-u-padding-bottom-9"></div>
-<p>
-<a href="/identifiable-data/added-legal-bases-upload-consent" class="nhsuk-button">Continue</a><br />
-<!--<a href="#">Return to this application later</a>-->
-</p>
 
+<br /><br />
+<p><a href="/dsa-section-list" class="nhsuk-button nhsuk-button-save-continue"> Continue</a><br /></p>
+
+
+  
 
 </div>  
 </div>
@@ -228,36 +284,26 @@ View file guidance
 
 
 
-
 <footer role="contentinfo">
-<div class="nhsuk-footer" id="nhsuk-footer">
-<div class="nhsuk-width-container">
-<h2 class="nhsuk-u-visually-hidden">Support links</h2>
-<ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
-<li class="nhsuk-footer__list-item"><a href="/about-us" class="nhsuk-footer__list-item-link" target="_blank">About us</a></li>
-<li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility</a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/contact-us/freedom-of-information" class="nhsuk-footer__list-item-link" target="_blank">Freedom of information</a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/privacy-and-cookies" class="nhsuk-footer__list-item-link" target="_blank">Privacy and cookies</a></li>
-<li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
-<li class="nhsuk-footer__list-item"><a href="/contact-us" class="nhsuk-footer__list-item-link" target="_blank">Contact us </a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/terms-and-conditions" class="nhsuk-footer__list-item-link" target="_blank">Terms and conditions </a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/data" class="nhsuk-footer__list-item-link" target="_blank">Data</a></li>
-</ul>
-<p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
-</div>
-</div>
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="/about-us" class="nhsuk-footer__list-item-link" target="_blank">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/contact-us/freedom-of-information" class="nhsuk-footer__list-item-link" target="_blank">Freedom of information</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/privacy-and-cookies" class="nhsuk-footer__list-item-link" target="_blank">Privacy and cookies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
+        <li class="nhsuk-footer__list-item"><a href="/contact-us" class="nhsuk-footer__list-item-link" target="_blank">Contact us </a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/terms-and-conditions" class="nhsuk-footer__list-item-link" target="_blank">Terms and conditions </a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/data" class="nhsuk-footer__list-item-link" target="_blank">Data</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
 </footer>
 
 
-
-
-
-
-<!-- Custom JavaScript files can be added to this file -->
-<script src="/js/jquery-3.5.1.min.js"></script>
-<script src="/js/main.js"></script>
-
-<script src="/js/auto-store-data.js"></script>
 
 
 </body>

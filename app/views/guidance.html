@@ -25,6 +25,11 @@ DARS - NHS
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
 
+<script src="https://www.gov.uk/assets/static/govuk_publishing_components/vendor/lux/lux-measurer-505eef3e243b1d08ea7c4b945ebe1ae146d896db61366e415b30cc1bcd84cbdc.js" async="async"></script>
+    <script src="https://www.gov.uk/assets/static/govuk_publishing_components/rum-loader-c53469dcb841d7b228c914a2e8bdcf3b831a578adf7d4f21cf9da5b85df7381e.js" async="async" data-lux-reporter-script="/assets/static/govuk_publishing_components/vendor/lux/lux-reporter-be0039fdd1e43d48c5c981634351f34f50993d255262daf23812d717cfe117ce.js"></script>
+    <script src="https://www.gov.uk/assets/static/govuk_publishing_components/load-analytics-be03d6b8ecbfc30bbb8422c9e635a7627efa5a1c73b49824adbe69ffbc2036ed.js"></script>
+
+
 <style type="text/css">
 
 
@@ -246,16 +251,31 @@ Signout
 
 
 
+
+
+
+
 <div class="nhsuk-width-container ">
 <div class="nhsuk-grid-row">
 <div class="nhsuk-grid-column-two-thirds">
-<dl data-module="gem-track-click">
-      <dt class="gem-c-metadata__term">From: <a href="#">NHS England</a></dt>
-      <dt class="gem-c-metadata__term">Published 12 October 2022</dt>
-      <dt class="gem-c-metadata__term">Last updated 12 October 2022 <a href="#">+ See all updates</a></dt>
-    </dl>
+<div class="app-c-published-dates govuk-!-margin-bottom-5" id="full-publication-update-history" 
+data-module="gem-toggle" lang="en">
+    <br/>From: <a href="#">NHS England</a> <br/>Published April 2023 <br>Last updated 04 April 2023
+      <a href="#full-history" class="app-c-published-dates__toggle govuk-link" data-controls="full-history" data-expanded="false" data-toggled-text="- hide all updates">+ show all updates</a>
+      <div class="app-c-published-dates__change-history js-hidden" id="full-history">
+        <ol class="app-c-published-dates__list">
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2022-11-16T18:16:59.000+00:00">04 April 2023</time>
+              <p class="app-c-published-dates__change-note">Lorem Ipsum</p>
+            </li>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2022-02-24T00:00:00.000+00:00">01 April 2023</time>
+              <p class="app-c-published-dates__change-note">Lorem Ipsum</p>
+            </li>
+        </ol>
+      </div>
 </div>
-
+</div>
 
 <div class="nhsuk-grid-column-two-thirds">
 <div class="nhsuk-u-padding-bottom-7"></div>
@@ -727,6 +747,8 @@ Contents
 
 
 <!-- Custom JavaScript files can be added to this file -->
+<script src="https://www.gov.uk/assets/static/application-95aadcb5937bf2fc39d824ed8114d7a1fe0aa26e45db76772f9793a477be821a.js"></script>
+<script src="https://www.gov.uk/assets/government-frontend/application-0189f4a506bb5e2d3c9f06db1c709c81297860cb682b1cc4a0da52137b0e5c1a.js"></script>
 
 <script src="https://www.gov.uk/assets/static/application-205d2642ac5d6a187eda572b255437343ada43829d9a73e7ccfa5bdc7e721182.js"></script>
 <script src="https://www.gov.uk/assets/government-frontend/application-cc1b87cb7f7a7266f46b044ca2fdbe06fe48f196c15b5dbc53f62ca09af57aba.js"></script>

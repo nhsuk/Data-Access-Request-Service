@@ -43,7 +43,7 @@ Data Access Request Service
 </a>
 </div>
 
-<div class="l-pro-signlink">Janey Mcgregor&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout">Sign out</a></div>
+<div class="l-pro-signlink">Janey Mcgregor&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout singout-clr-wht">Sign out</a></div>
 
 <div class="nhsuk-header__content" id="content-header">
 
@@ -67,8 +67,8 @@ Data Access Request Service
 <ul class="nhsuk-header__navigation-list">
 
 
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="/dashboard/multiple-applications-two">
+<li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
+<a class="nhsuk-header__navigation-link" href="/dashboard/">
 Apply for or Manage DSA
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -76,7 +76,7 @@ Apply for or Manage DSA
 </a>
 </li>
 
-<li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
+<li class="nhsuk-header__navigation-item">
 <a class="nhsuk-header__navigation-link" href="/dashboard/dsa/status-expire">
 Active DSAs
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
@@ -87,7 +87,7 @@ Active DSAs
 
 <li class="nhsuk-header__navigation-item">
 <a class="nhsuk-header__navigation-link" href="/dashboard/dsfc">
-Data&nbsp;Sharing&nbsp;Framework&nbsp;Contract
+Data Sharing Framework Contract
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -121,6 +121,7 @@ Guidance
 </a>
 </li>
 
+
 <li class="nhsuk-header__navigation-item  l-signout-mob">
 <a class="nhsuk-header__navigation-link" href="/">
 Signout
@@ -129,6 +130,9 @@ Signout
 </svg>
 </a>
 </li>
+
+
+
 
 
 
@@ -141,198 +145,93 @@ Signout
 <nav class="nhsuk-breadcrumb app-breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-3689-ABCD-v2.0</li>
+      <li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-209174-W2H3G</li>
       <li class="nhsuk-breadcrumb__item" style="float: right;"><strong>Total Estimated Cost:</strong> £1234.50</li>
     </ol>
   </div>
 </nav>
 
-
-
-
-
-
-<!-- Start Main Section-->
-
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/dashboard/dsa/amend">
+<a class="nhsuk-back-link__link" href="/about-the-controller/controller">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
 Go back</a>
-</div>
+</div>        
+
 
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
 <div class="nhsuk-grid-row">
-
-
-
-
 <div class="nhsuk-grid-column-two-thirds">
+
+
+
+
+
+
+
+
 <br />
-<h1>
-<span class="nhsuk-caption-l"><span class="nhsuk-u-visually-hidden"> - </span>
-</span>
-Application for a <br />Data Sharing Agreement</h1>
+<h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
+About the Controller</span>
+Which organisation is a Controller for the data? 
 
 
 
-<p>You can now make changes to the following sections. The changes you submit will be assessed to determine if you can get an updated Data Sharing Agreement. </p>
+</h1>
+
+<div class="nhsuk-hint" id="example-with-hint-text-hint">
+    The Controller is the body that takes legal responsibility for the data requested from NHS England.
+  </div>
+
+<div class="nhsuk-form-group">
+  <form autocomplete="off">
+    <label class="nhsuk-label" for="input-width-20">
+   Search by name 
+  </label>
+  <div class="autocomplete" >
+    <input id="myInput" name="myCountry" placeholder="" class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+  </div>
+<!-- <a href="/controller-data-1" class="nhsuk-button search-bt">Search</a> -->
+</form>
+  
+
+<br />
+
+<details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      I can’t find the organisation
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+     <p>If the organisation is not listed, this could be because the organisation is not a recognised Controller. <a class="nhsuk-link nhsuk-link--no-visited-state" href="/about-the-controller/add-organisation-details">Enter organisation name</a> Providing this information will generate a notification to NHS England who will contact the organisation to confirm their status and willingness to be listed as a Controller.</p>
+
+  </div>
+</details>
+
+
+</div>
+<br /><br />
+<p><a href="/about-the-controller/processing-data" class="nhsuk-button nhsuk-button-save-continue"> Continue</a><br />
+<!--<a href="#">Return to this application later</a>--></p>
+
+
+
+
+
+
+
+
+
 </div>  
-</div>
-
-<!-- Start 2 columns -->
-
-
-
-
-
-
-
-
-
-
-
-<div class="nhsuk-grid-row">
-
-<div class="nhsuk-grid-column-two-thirds">
-<div class="section-list-sidebar-block">
-
-
-
-
-
-
-
-
-
-
-<br />
-<h3>1. About the organisations involved</h3>
-<p>We need some information about your organisation, who controls and processes the data, and who will be signing for your organisation. </p>
-
-<table class="nhsuk-table section-list-no-border">
-<tbody class="nhsuk-table__body">
-<tr class="nhsuk-table__row section-list-border-tp">
-<td class="nhsuk-table__cell "><a href="/dashboard/dsa/edit-about-the-controller-check-your-answers" class="nhsuk-link--no-visited-state">About the Controller</a></td><td class="nhsuk-table__cell"> <strong class="nhsuk-tag nhsuk-tag--white">MAKE CHANGES</strong></td></tr>
-<!-- <tr class="nhsuk-table__row"><td class="nhsuk-table__cell"><a href="#" class="nhsuk-link--no-visited-state">About the Processor</a></td>
-<td class="nhsuk-table__cell"> <strong class="nhsuk-tag nhsuk-tag--white">
-Make changes
-</strong></td>
-</tr> -->
-<tr class="nhsuk-table__row">
-<td class="nhsuk-table__cell">
-<a href="/privacy">Privacy notice</a>
-</td>
-<td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Make changes</strong></td>
-</tr>
-<tr class="nhsuk-table__row">
-<td class="nhsuk-table__cell">
-<a href="/about-the-processor/processor-data">About the processor</a>
-</td>
-<td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Make changes</strong></td>
-</tr>
-<tr class="nhsuk-table__row">
-<td class="nhsuk-table__cell">
-<a href="/processing-location">Processing locations</a>
-</td>
-<td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Make changes</strong></td>
-</tr>
-<tr class="nhsuk-table__row">
-<td class="nhsuk-table__cell">
-<a href="/storage-location">Storage locations</a>
-</td>
-<td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Make changes</strong></td>
-</tr>
-<tr class="nhsuk-table__row">
-<td class="nhsuk-table__cell">
-<a href="/funding">Funding</a>
-</td>
-<td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Make changes</strong></td>
-</tr>
-<!-- <tr class="nhsuk-table__row">
-<td class="nhsuk-table__cell"><a href="#" class="nhsuk-link--no-visited-state">About the processing location</a></td>
-<td class="nhsuk-table__cell"> <strong class="nhsuk-tag nhsuk-tag--white">
-MAKE CHANGES
-</strong></td>
-</tr>
-
-<tr class="nhsuk-table__row">
- <td class="nhsuk-table__cell"><a href="#" class="nhsuk-link--no-visited-state">Other organisations involved</a></td> 
-<td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white">
-MAKE CHANGES
-</strong></td>
-</tr> -->
-
-
-
-</tbody> 
-</table>
-
-
-
-
-<h3>2. Application overview</h3>
-<p>Based on the information provided in previous sections, here is an estimated cost for accessing the data requested, a list of uploaded documents and a summary of the application. </p>
-
-<table class="nhsuk-table section-list-no-border">
-<tbody class="nhsuk-table__body">
-<!-- <tr class="nhsuk-table__row section-list-border-tp">
-<td class="nhsuk-table__cell">
-<a href="#" class="nhsuk-link--no-visited-state">Estimated cost</a>
-</td>
-<td class="nhsuk-table__cell">
-<strong class="nhsuk-tag nhsuk-tag--white">
-  View
-</strong>
-
-</td>
-</tr> -->
-
-<tr class="nhsuk-table__row">
-<td class="nhsuk-table__cell">  <a href="#" class="nhsuk-link--no-visited-state">List of uploaded documents</a></td>
-<td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--white"> Make changes</strong></td>
-</tr>
-
-<tr class="nhsuk-table__row">
-<td class="nhsuk-table__cell"><a href="#" class="nhsuk-link--no-visited-state">Submit application</a></td>
-<td class="nhsuk-table__cell"><strong class="nhsuk-tag nhsuk-tag--orange"> Action Needed</strong></td>
-</tr>
-
-</tbody>
-</table>
-
-
-</div>
-</div>
-
-
-
-<div class="nhsuk-grid-column-one-third"> 
-<div class="gethelp-sidebar-block"><br />
-<h6>Get help</h6>
-<p><strong>Telephone</strong> <br/>0300 303 5678 <br />Monday to Friday, from 9am to 5pm </p>
-
-<p><strong>Email</strong>  <br /><a href="mailto:enquiries@nhsdigital.nhs.uk">enquiries@nhsdigital.nhs.uk</a></p>
-
-<p></p>
-</div> 
-</div>
-
-</div>
-
-<!-- End 2 columns -->
-
-
-
-
-
 </div>
 </main>
 </div>
 
-<!-- End Main Section-->
+
+
 
 <footer role="contentinfo">
   <div class="nhsuk-footer" id="nhsuk-footer">
@@ -363,6 +262,111 @@ MAKE CHANGES
 <script src="/js/main.js"></script>
 
 <script src="/js/auto-store-data.js"></script>
+
+<script>
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var org = ["OXFORD BROOKS UNIVERSITY", "UNIVERSITY OF OXFORD", "OXFORD CITY COUNCIL"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), org);
+</script>
 
 
 </body>

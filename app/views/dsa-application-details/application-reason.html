@@ -175,13 +175,13 @@ Go back</a>
 Data request reason and project name
 </span>Data request reason</h1> 
 
-<div class="nhsuk-inset-text">
+<!-- <div class="nhsuk-inset-text">
   <span class="nhsuk-u-visually-hidden">Information: </span>
-<!--   <p>A concise, one-line description of the project/purpose of this request.</p>
+  <p>A concise, one-line description of the project/purpose of this request.</p>
   <p>This title will be referenced throughout DARS Online and should be something that helps you identify the application.</p>
-  <p>Please remember that the title (as well as the detail of your application) may be published. </p> -->
+  <p>Please remember that the title (as well as the detail of your application) may be published. </p>
   <p>Select ‘Research (other)’ only if your data request is neither HDRUK nor NIHR funded.</p>
-</div>
+</div> -->
 
 
 
@@ -189,11 +189,11 @@ Data request reason and project name
 <div class="nhsuk-hint nhsuk-u-margin-bottom-2">
     Confirm the reason for your data request 
   </div>
-
-
+<br />
+  <div class="nhsuk-form-group">
 
 <fieldset class="nhsuk-fieldset">
-  <div class="nhsuk-form-group">
+
     <div class="nhsuk-radios">
 
       <div class="nhsuk-radios__item">
@@ -201,6 +201,9 @@ Data request reason and project name
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
           Research (HDRUK funded) 
         </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          Research that is funded by Health Data Research UK
+        </div>
       </div>
 
       <div class="nhsuk-radios__item">
@@ -208,13 +211,21 @@ Data request reason and project name
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
           Research (NIHR funded)
         </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          Research that is funded by National Institute for Health and Care Research 
+        </div>
       </div>
+
+      
 
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="not sure">
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
           Research (other)
         </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          Research that is not funded by Health Data Research UK or National Institute for Health and Care Research 
+        </div>
       </div>
 
       <div class="nhsuk-radios__item">
@@ -222,6 +233,9 @@ Data request reason and project name
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
           Service Evaluation or Audit
         </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          Service evaluations are designed to answer the question “What standard does this service achieve?”. Audits are designed to find out whether the quality of a service meets a defined standard 
+        </div>
       </div>
 
       <div class="nhsuk-radios__item">
@@ -229,6 +243,10 @@ Data request reason and project name
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
           Statutory Function
         </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          Its purpose is to meet an organisational statutory function such as UK Health Security Agency’s health protection functions 
+        </div>
+      </div>
       </div>
 
       <div class="nhsuk-radios__item">
@@ -236,25 +254,28 @@ Data request reason and project name
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
           Other
         </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          The reason for your data request does not align with one of those already mentioned 
+        </div>
       </div>
 
-      <div class="nhsuk-radios__item">
+      <!-- <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="not sure">
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
           Submission for advice (for example, consent review) 
         </label>
-      </div>
-
-    </div>
-  </div>
-
-</fieldset>
-
+         <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          An application that requires advice on certain aspects such as whether the consent material can be relied upon for the purpose of the study  
+        </div>
+      </div> -->
 <br /><br />
 <p><a href="/dsa-application-details/application-title" class="nhsuk-button nhsuk-button-save-continue"> Continue</a><br /></p>
 
+    </div>
+</fieldset>
+  </div>
 
-  
+
 
 </div>  
 </div>

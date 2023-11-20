@@ -73,7 +73,7 @@ Data Access Request Service
 
 <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
 <a class="nhsuk-header__navigation-link" href="/dashboard/">
-Apply for or Manage DSA
+Manage applications
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -82,7 +82,7 @@ Apply for or Manage DSA
 
 <li class="nhsuk-header__navigation-item">
 <a class="nhsuk-header__navigation-link" href="/dashboard/dsa/status-expire">
-Active DSAs
+Manage DSAs
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -157,7 +157,7 @@ Signout
 
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/ethics/ethics-approval-yes">
+<a class="nhsuk-back-link__link" href="/ethics/ethics-upload">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
@@ -174,25 +174,25 @@ Go back</a>
 <br />
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
 Ethics Approval</span>
-Upload document(s) 
+Uploaded document(s) 
 </h1>
 
 
 <div class="nhsuk-inset-text">
   <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>You should now upload supporting document(s) to demonstrate that Ethics Approval is in place.</p>
+  <p>If you need to upload another document, select 'Add another document'.</p>
   <!-- <p>Documents should include a document date, version number, an approval date and any comments (if left). </p> -->
 </div>
 
-<div class="nhsuk-form-group">
+<!-- <div class="nhsuk-form-group">
 
   <p>Ethics approval reference</p>
   <input class="nhsuk-input nhsuk-input--width-10" id="example-with-hint-text" name="example-with-hint-text" type="text" aria-describedby="example-with-hint-text-hint" inputmode="numeric">
-</div>
+</div> -->
 
 <br/>
 
-<details class="nhsuk-details" open>
+<!-- <details class="nhsuk-details" open>
 <summary class="nhsuk-details__summary">
 <span class="nhsuk-details__summary-text">
 View file guidance
@@ -202,8 +202,8 @@ View file guidance
 <div class="nhsuk-details__text">
 <p>A file should not exceed 3 MB and should be one of the following acceptable file formats: PDF, Word, Excel</p>
 </div>
-</details>
-<p>Files you have uploaded</p>
+</details> -->
+<p>Here you can see you're uploaded documents.</p>
 <dl class="nhsuk-summary-list">
 <div class="nhsuk-summary-list__row">
 <dd class="nhsuk-summary-list__value">
@@ -211,19 +211,12 @@ View file guidance
 </dd>
 <dd class="nhsuk-summary-list__actions">
 <a href="#">
-Remove file<span class="nhsuk-u-visually-hidden"> name</span>
+Delete<span class="nhsuk-u-visually-hidden"> name</span>
 </a>
 </dd>
 </div><br />
-<a href="#" class="nhsuk-link upload-another-file">Upload another file</a>
+<a href="/ethics/ethics-upload" class="nhsuk-link upload-another-file">Add another document</a>
 </dl>
-
-
-
-
-
-
-
 
 
 

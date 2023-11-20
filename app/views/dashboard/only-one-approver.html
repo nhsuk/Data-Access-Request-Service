@@ -79,7 +79,7 @@ Data Access Request Service
 
 <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
 <a class="nhsuk-header__navigation-link" href="/dashboard/">
-Apply for or Manage DSA
+Manage applications
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -88,7 +88,7 @@ Apply for or Manage DSA
 
 <li class="nhsuk-header__navigation-item">
 <a class="nhsuk-header__navigation-link" href="/dashboard/dsa/status-expire">
-Active DSAs
+Manage DSAs
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -182,14 +182,65 @@ Go back</a>
 <br />
 <h1 class="nhsuk-heading-xl"><span class="nhsuk-caption-l nhsuk-caption--bottom">
 University of Leeds
-</span>Applications for Data Sharing <br />Agreements</h1>
+</span>Manage applications</h1>
 
 <!-- <div class="nhsuk-hint" id="example-hint">
 Here, you can see new applications that you have made, and manage the changes you are making to existing Data Sharing Agreements. Changes to an existing Data Sharing Agreement are still considered an ‘application’, because you are ‘applying’ to make change. 
 </div> -->
 
+<br />
 
-<br /><br />
+<h3>Approve Applications
+<div class="nhsuk-hint" id="example-hint">
+Here, you can see applications that are waiting approval. </div></h3>
+<table role="table" class="nhsuk-table-responsive">
+  <caption class="nhsuk-table__caption"></caption>
+  <thead role="rowgroup" class="nhsuk-table__head">
+    <tr role="row">
+      <th role="columnheader" class="" scope="col">
+        Reference number
+      </th>
+      <th role="columnheader" class="" scope="col">
+        Organisation
+      </th>
+      <th role="columnheader" class="" scope="col">
+        End date
+      </th>
+      <!-- <th role="columnheader" class="" scope="col">
+        Last Updated 
+      </th> -->
+      <th role="columnheader" class="" scope="col">
+        Status
+      </th>
+      <th role="columnheader" class="" scope="col">
+        Action
+      </th>
+    </tr>
+  </thead>
+  <tbody class="nhsuk-table__body">
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading"> Reference number </span>DARS-NIC-2548-GFDS-v1.3
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Organisation </span>University of Leeds
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">End date </span>15/09/2022
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--orange statuses-nhs-tag">Awaiting&nbsp;Signature</strong><br/> <span class="nhsuk-body-s">(SIGNED&nbsp;BY&nbsp;0&nbsp;OF&nbsp;1&nbsp;APPROVERS)</span>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Action </span><a href="/dashboard/approver-one">Open</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />&nbsp;
+
+
 <h3>New Applications
 <div class="nhsuk-hint" id="example-hint">
 Here, you can see new applications that have been made. </div></h3>
@@ -241,60 +292,14 @@ Here, you can see new applications that have been made. </div></h3>
 
 
 
-<br /><br />
-<h3>Approve Applications
-<div class="nhsuk-hint" id="example-hint">
-Here, you can see applications that are waiting approval. </div></h3>
-<table role="table" class="nhsuk-table-responsive">
-  <caption class="nhsuk-table__caption"></caption>
-  <thead role="rowgroup" class="nhsuk-table__head">
-    <tr role="row">
-      <th role="columnheader" class="" scope="col">
-        Reference number
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Organisation
-      </th>
-      <th role="columnheader" class="" scope="col">
-        End date
-      </th>
-      <!-- <th role="columnheader" class="" scope="col">
-        Last Updated 
-      </th> -->
-      <th role="columnheader" class="" scope="col">
-        Status
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Action
-      </th>
-    </tr>
-  </thead>
-  <tbody class="nhsuk-table__body">
-    <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading"> Reference number </span>DARS-NIC-2548-GFDS-v1.3
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Organisation </span>University of Leeds
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">End date </span>15/09/2022
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--orange statuses-nhs-tag">Awaiting&nbsp;Signature</strong><br/> <span class="nhsuk-body-s">(SIGNED&nbsp;BY&nbsp;0&nbsp;OF&nbsp;1&nbsp;APPROVERS)</span>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Action </span><a href="/dashboard/approver-one">Open</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<br />&nbsp;
 
 
-<h3>Manage Applications
+
+<h3>Extension, renewal and amendment applications
 <div class="nhsuk-hint" id="example-hint">
-   Here, you can see new applications that have been made and manage the changes you are making to existing Data Sharing Agreements (DSAs). Changes to an existing DSA are still considered an ‘application’ because you are ‘applying’ to make change. 
+  Here, you can manage the changes you are making to existing Data Sharing Agreements (DSAs). Changes to an existing DSA are still considered an 'application', because you are 'applying' to make change. <br /> <br />
+
+   New extension, renewal and amendment applications can be created by going to ‘Manage DSAs’ and selecting the ‘Manage’ link next to the relevant DSA.
   </div>
 </h3>
 <table role="table" class="nhsuk-table-responsive">

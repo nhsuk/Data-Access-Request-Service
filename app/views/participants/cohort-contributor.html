@@ -85,7 +85,7 @@ Data Access Request Service
 
 <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
 <a class="nhsuk-header__navigation-link" href="/dashboard/">
-Apply for or Manage DSA
+Manage applications
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -94,7 +94,7 @@ Apply for or Manage DSA
 
 <li class="nhsuk-header__navigation-item">
 <a class="nhsuk-header__navigation-link" href="/dashboard/dsa/status-expire">
-Active DSAs
+Manage DSAs
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -230,20 +230,20 @@ Who will provide Participant data to NHS England?
   <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
 </div>
 
+<br />
 <div class="nhsuk-form-group">
   <form autocomplete="off">
     <label class="nhsuk-label" for="input-width-20">
-   Search by name 
+   Organisation
   </label>
+  <div class="nhsuk-hint" id="example-with-hint-text-hint">
+    Search by name
+  </div>
   <div class="autocomplete" >
     <input id="myInput" name="myCountry" placeholder="" class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
   </div>
-<!-- <a href="/controller-data-1" class="nhsuk-button search-bt">Search</a> -->
 </form>
-  
-
 <br />
-
 <details class="nhsuk-details">
   <summary class="nhsuk-details__summary">
     <span class="nhsuk-details__summary-text">
@@ -251,9 +251,14 @@ Who will provide Participant data to NHS England?
     </span>
   </summary>
   <div class="nhsuk-details__text">
-     <p>If the organisation is not listed, <a class="nhsuk-link nhsuk-link--no-visited-state" href="#">enter details of your organisation</a>. Once the application has been submitted, the organisation’s details will be verified and stored in DARS for future use.</p>
-
+     <p>If the organisation is not listed, enter the name of your organisation.</p>
+     <div class="autocomplete" >
+    <input id="myInput" name="myCountry" placeholder="" class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+    <br />&nbsp;
+    <p>Once the application has been submitted, the organisation’s details will be verified and stored in DARS for future use.</p>
   </div>
+  </div>
+
 </details>
 <br/>
 <!-- <div class="nhsuk-form-group">
@@ -271,14 +276,17 @@ Who will provide Participant data to NHS England?
 
 <div class="nhsuk-form-group">
   <label class="nhsuk-label" for="input-width-20">
-    Email
+    Email address of Participant Data Provider 
   </label> 
-  <div class="nhsuk-hint" id="example-with-hint-text-hint">
-    Email address where the team responsible for the secure service used to transfer the data can contact the Participant Data Contributor.  
-  </div>
   <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
 </div>
 
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-20">
+   Confirm email address
+  </label> 
+  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+</div>
 
 <!-- 
 <div class="nhsuk-form-group">

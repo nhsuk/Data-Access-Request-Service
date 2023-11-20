@@ -43,11 +43,11 @@ float: left !important;
     function myFunction() {
 
         if(document.getElementById('optionone').checked) {
-            document.getElementById('linkid').href = "/dashboard/dsa/renew-start-now";
+            document.getElementById('linkid').href = "/dashboard/dsa/extend-start-now";
         }
 
       if(document.getElementById('optiontwo').checked) {
-            document.getElementById('linkid').href = "/dashboard/dsa/extend-start-now";
+            document.getElementById('linkid').href = "/dashboard/dsa/renew-start-now";
         }
 
       if(document.getElementById('optionthree').checked) {
@@ -104,7 +104,7 @@ Data Access Request Service
 
 <li class="nhsuk-header__navigation-item">
 <a class="nhsuk-header__navigation-link" href="/dashboard/">
-Apply for or Manage DSA
+Manage applications
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -113,7 +113,7 @@ Apply for or Manage DSA
 
 <li class="nhsuk-header__navigation-item  app-header__navigation-item__item--current">
 <a class="nhsuk-header__navigation-link" href="/dashboard/dsa/status-expire">
-Active DSAs
+Manage DSAs
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -209,18 +209,19 @@ University of Leeds
 
 <div class="nhsuk-inset-text">
   <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>Changes you make can be viewed and managed under ‘Apply for or Manage DSA’</p>
+  <p>Changes you make can be viewed and managed under ‘Manage applications’.</p>
 </div>
-
-
-<p>Select which action you want to take on this Data Sharing Agreement (DSA) </p>
 
 
 
 <fieldset class="nhsuk-fieldset">
 
-  <div class="nhsuk-hint nhsuk-u-margin-bottom-2">
+<!--   <div class="nhsuk-hint nhsuk-u-margin-bottom-2">
     Selecting one of the below actions will take you to a page where you can tell us what you would like to do. We will use information from the current DSA to create a new application. The new DSA will have an updated version number. 
+  </div> -->
+<div class="nhsuk-hint nhsuk-u-margin-bottom-2">
+    Select which action you want to take on this Data Sharing Agreement (DSA)
+The information from this current DSA will be used to create an application. 
   </div>
 
   <div class="nhsuk-hint">
@@ -234,33 +235,32 @@ University of Leeds
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-          I would like to request more data from the same data set 
+          Extend my DSA  - retaining the data I have and not requiring any new data 
         </label>
       </div>
 
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
-         I do not require any new data, but I would like to retain the data I have for processing or archiving in line with the existing purpose outlined in the objective for processing 
+         Renew my DSA  - requesting more data from the same data set(s)
         </label>
 
       </div>
 
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" type="radio" id="optionthree" name="radio">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
-          I would like to arrange to close my DSA because it has either expired, is due to expire or for another reason
-        </label>
-      </div>
+
 
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" type="radio" id="optionfour" name="radio">
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-4">
-        I would like to make a change to my DSA
+        Amend my DSA -  changing anything else in my DSA
         </label>
-        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
-    You should choose this option if you would like to make a change to your DSA or if you would like to process data for a purpose that is different to the one outlined in the objective for processing 
-  </div>
+      </div>
+
+            <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionthree" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+          Close my DSA - closing my DSA
+        </label>
       </div>
 
     </div>

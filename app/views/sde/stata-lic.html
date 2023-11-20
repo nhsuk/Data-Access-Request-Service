@@ -72,8 +72,8 @@ Secure Data Environment Service
 
 
 <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
-<a class="nhsuk-header__navigation-link" href="https://edar.herokuapp.com/sde">
-Manage users
+<a class="nhsuk-header__navigation-link" href="https://edar.herokuapp.com/sde/manage-users">
+Home
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -81,27 +81,26 @@ Manage users
 </li>
 
 <li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="/sde/view-signed-agreement">
-View signed SDE agreement
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
-
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="https://edar.herokuapp.com/sde">
-Help
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
-
-
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="/guidance">
+<a class="nhsuk-header__navigation-link" href="#">
 Guidance
+<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+</svg>
+</a>
+</li>
+
+<li class="nhsuk-header__navigation-item ">
+<a class="nhsuk-header__navigation-link" href="#">
+Updates
+<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+</svg>
+</a>
+</li>
+
+<li class="nhsuk-header__navigation-item ">
+<a class="nhsuk-header__navigation-link" href="#">
+Contact
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -140,7 +139,7 @@ Signout
 
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/sde/how-much-memory">
+<a class="nhsuk-back-link__link" href="/sde/add-new-user-details">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
@@ -157,8 +156,15 @@ Go back</a>
 <br />
 <h1>
 Does this user need a Stata licence?</h1>
-<p>The virtual desktop comes with Databricks and RStudio as standard. Stata access will incur an additional cost. <a href="#">Read more about the tools</a>.</p>
+<p>Some users may need a Stata licence. Stata is an optional software that enables users to analyse, manage and produce graphical visualisations of data.  </p>
+<p>The SDE environment comes with Databricks and RStudio as standard. Additionally, you can choose to assign a Stata licence.  </p>
 
+
+
+<div class="nhsuk-inset-text">
+  <span class="nhsuk-u-visually-hidden">Information: </span>
+  <p>If you would like to assign a Stata licence to this user, it will incur an additional cost. <a href="https://digital.nhs.uk/services/secure-data-environment-service#charges-to-access-sde" target="_blank">Read more about SDE service charges for user accounts and additional licences (opens in a new window)</a>.</p>
+</div>
 
 <div class="nhsuk-form-group">
 
@@ -202,22 +208,22 @@ Does this user need a Stata licence?</h1>
 
 
 <footer role="contentinfo">
-<div class="nhsuk-footer" id="nhsuk-footer">
-<div class="nhsuk-width-container">
-<h2 class="nhsuk-u-visually-hidden">Support links</h2>
-<ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
-<li class="nhsuk-footer__list-item"><a href="/about-us" class="nhsuk-footer__list-item-link" target="_blank">About us</a></li>
-<li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility</a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/contact-us/freedom-of-information" class="nhsuk-footer__list-item-link" target="_blank">Freedom of information</a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/privacy-and-cookies" class="nhsuk-footer__list-item-link" target="_blank">Privacy and cookies</a></li>
-<li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
-<li class="nhsuk-footer__list-item"><a href="/contact-us" class="nhsuk-footer__list-item-link" target="_blank">Contact us </a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/terms-and-conditions" class="nhsuk-footer__list-item-link" target="_blank">Terms and conditions </a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/data" class="nhsuk-footer__list-item-link" target="_blank">Data</a></li>
-</ul>
-<p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
-</div>
-</div>
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Accessibility</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Freedom of information</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Privacy and cookies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Contact us </a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Terms and conditions </a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Data</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
 </footer>
 
 

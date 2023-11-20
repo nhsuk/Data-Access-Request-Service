@@ -73,7 +73,7 @@ Data Access Request Service
 
 <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
 <a class="nhsuk-header__navigation-link" href="/dashboard/">
-Apply for or Manage DSA
+Manage applications
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -82,7 +82,7 @@ Apply for or Manage DSA
 
 <li class="nhsuk-header__navigation-item">
 <a class="nhsuk-header__navigation-link" href="/dashboard/dsa/status-expire">
-Active DSAs
+Manage DSAs
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -174,335 +174,14 @@ Go back</a>
 <br />
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
 About the Participants</span>
-Linking your Participant data with NHS England’s data 
+Confidential data you are allowed to share with NHS England
 </h1>
 
-<!-- <div class="nhsuk-inset-text">
-  <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>NHS England use <a href="https://digital.nhs.uk/services/demographics/master-person-service" target="_blank">Master Person Service (MPS)</a> to link Participant data with NHS England's data. MPS helps NHS England increase the amount of useable, better-quality data available to support research and planning. </p>
-</div> -->
+<p>Based on how you meet or set aside your duty of confidentiality, which data items are you permitted to send to NHS England? </p>
+<p>The date of birth must be included to allow for the NHS Master Person Service (MPS) to match the data. </p>
+<p>If you are not permitted to send date of birth, email <a href="#">data.applications@nhsdigital.nhs.uk</a>.</p>
 
-
-<details class="nhsuk-details">
-  <summary class="nhsuk-details__summary">
-    <span class="nhsuk-details__summary-text">
-      Guidance
-    </span>
-  </summary>
-  <div class="nhsuk-details__text">
-    <p>When you provide NHS England with Participant data (that is, a list of identified individuals), you must include a Study ID that contains a unique and non-identifiable value for everyone. All Participant data submissions must be submitted as a .CSV file using the column headers and formats in the table. </p>
-
-    <p>To ensure the most appropriate data linkage, you must supply an NHS Number and Date of Birth if you have them. Otherwise, provide as many pieces of information from the ‘Recommended fields’ section in line with your legal bases and the automated Participant submission table below:</p>
-    <table role="table" class="nhsuk-table-responsive">
-  <thead role="rowgroup" class="nhsuk-table__head">
-    <tr role="row">
-<!--       <th role="columnheader" class="" scope="col">
-        Column
-      </th> -->
-      <th role="columnheader" class="" scope="col">
-        Field name
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Guidance (formats)
-      </th>
-    </tr>
-  </thead>
-  <tbody class="nhsuk-table__body">
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>UNIQUE_REFERENCE  
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Study ID <strong>(must be unique and non-identifiable)</strong>
-      </td>
-    </tr>
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>NHS_NO  
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Standard (valid) NHS Number
-      </td>
-    </tr>
-     <!-- <tr role="row" class="nhsuk-table__row">
-       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> 
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>FAMILY_NAME   
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Known surname or family name
-      </td>
-    </tr>-->
-
-     <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>FIRST NAME    
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>First name or forename
-      </td>
-    </tr>
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>SURNAME  
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Family surname
-      </td>
-    </tr>
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>GENDER
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Gender of the person (0 = Not Known, 1 = Male, 2 = Female, 9 = Not Specified)
-      </td>
-    </tr>
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>DATE_OF_BIRTH
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Persons birth date (YYYYMMDD)
-      </td>
-    </tr>
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>POSTCODE
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Known Post Code of persons address
-      </td>
-    </tr>
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>DATE_OF_DEATH
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank
-      </td>
-    </tr>
-
-        <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>ADDRESS_LINE1
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank (trace performed on Post Code only)
-      </td>
-    </tr>
-
-        <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>ADDRESS_LINE2
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank (trace performed on Post Code only)
-      </td>
-    </tr>
-
-      <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>ADDRESS_LINE3
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank (trace performed on Post Code only)
-      </td>
-    </tr>
-
-      <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>ADDRESS_LINE4
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank (trace performed on Post Code only)
-      </td>
-    </tr>
-
-     <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>ADDRESS_LINE5
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank (trace performed on Post Code only)
-      </td>
-    </tr>
-
-     <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>ADDRESS_DATE
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank
-      </td>
-    </tr>
-
-     <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>GP_PRACTICE_CODE 
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank
-      </td>
-    </tr>
-
-     <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>NHAIS_POSTING_ID
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank
-      </td>
-    </tr>
-
-     <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>AS_AT_DATE
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank
-      </td>
-    </tr>
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>LOCAL_PATIENT_ID
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank
-      </td>
-    </tr>
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>INTERNAL_ID
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank
-      </td>
-    </tr>
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>TELEPHONE_NUMBER  
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank
-      </td>
-    </tr>
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>MOBILE_NUMBER
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank
-      </td>
-    </tr>+
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>EMAIL_ADDRESS
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span>Leave blank
-      </td>
-    </tr>
-
-    <tr role="row" class="nhsuk-table__row">
-<!--       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Column </span>Column 1
-      </td> -->
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Field name </span>STATUS
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Guidance (formats) </span> ADD / DELETE - Ind
-      </td>
-    </tr>
-    
-  </tbody>
-</table>
-
-  </div>
-
-
-</details>
-
-
+<br/>
 <form>
   <div class="nhsuk-form-group">
     <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
@@ -510,17 +189,13 @@ Linking your Participant data with NHS England’s data
         Select all options that are relevant to you.
       </div>
 
-      <div class="nhsuk-u-padding-bottom-3"></div>
-      <h4>Required fields
-      <div class="nhsuk-hint" id="example-hint">
-        Without this information, it’s difficult for NHS England to Participant match. You should provide both the NHS Number and Date of Birth. If you do not have any or all this information, provide as many of the ‘Recommended fields’ as you can. 
-      </div></h4>
+
       <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-one-half">
       <div class="nhsuk-checkboxes__item">
       <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
       <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-      NHS number
+      Address date
       </label>
       </div>
       </div>
@@ -528,22 +203,19 @@ Linking your Participant data with NHS England’s data
       <div class="nhsuk-checkboxes__item">
       <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
       <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-      Date of Birth
+      Given name
       </label>
-      </div><div class="nhsuk-u-padding-bottom-3"></div>  
+      </div> 
       </div> 
       </div>
-      <div class="nhsuk-u-padding-bottom-4"></div>
-      <h4>Recommended fields
-      <div class="nhsuk-hint" id="example-hint">
-       Providing this information helps ensure better Participant matching. 
-      </div></h4>
+
+      <div class="nhsuk-u-padding-bottom-5"></div>
       <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-one-half">
       <div class="nhsuk-checkboxes__item">
       <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
       <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-      Surname
+      Date of birth
       </label>
       </div>
       </div>
@@ -551,15 +223,15 @@ Linking your Participant data with NHS England’s data
       <div class="nhsuk-checkboxes__item">
       <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
       <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-      First name
+      NHS Number
       </label>
-      </div><div class="nhsuk-u-padding-bottom-3"></div>
+      </div><div class="nhsuk-u-padding-bottom-5"></div>
       </div>
       <div class="nhsuk-grid-column-one-half">
       <div class="nhsuk-checkboxes__item">
       <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
       <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-      Gender
+      Date of death 
       </label>
       </div>
       </div>
@@ -573,78 +245,35 @@ Linking your Participant data with NHS England’s data
       </div>
       </div>
 
-
-       <div class="nhsuk-u-padding-bottom-6"></div>
-      <h4>Optional fields
-      <div class="nhsuk-hint" id="example-hint">
-      If you have it, providing this information will further support Participant matching. 
-      </div>
-      </h4>
+      <div class="nhsuk-u-padding-bottom-5"></div>
       <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-one-half">
       <div class="nhsuk-checkboxes__item">
       <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
       <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-      Date of death
+      Family name  
       </label>
       </div>
       </div>
-      <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-checkboxes__item">
-      <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
-      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-      Address date
-      </label>
-      </div><div class="nhsuk-u-padding-bottom-3"></div>
-      </div>
-
-<!--       <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-checkboxes__item">
-      <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
-      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-      Data as at date
-      </label>
-      </div>
-      </div> -->
-
       <div class="nhsuk-grid-column-one-half">
       <div class="nhsuk-checkboxes__item">
       <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
       <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
       Telephone number
       </label>
+      </div><div class="nhsuk-u-padding-bottom-5"></div>
+      </div>
+      <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-checkboxes__item">
+      <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+      Gender
+      </label>
       </div>
       </div>
       </div>
     </fieldset>
   </div>
-<div class="nhsuk-u-padding-bottom-5"></div>
-<!-- <div class="nhsuk-form-group">
-  <label class="nhsuk-label" for="example">
-    Additional Linkage / Cohort Information
-  </label>
-  <details class="nhsuk-details">
-  <summary class="nhsuk-details__summary">
-    <span class="nhsuk-details__summary-text">
-      Guidance
-    </span>
-  </summary>
-  <div class="nhsuk-details__text">
-    <p>Using the text box, let us know of any additional, relevant information about your Participant linkage requirements that you have not been able to capture on this page.</p>
-    <p>Things to consider:</p>
-    <ul>
-      <li>Do you require reports / extract each time a file is sent in or only when the cohort is finalised?</li>
-      <li>Do you require back data or just latest available data when receiving data from other datasets e.g. HES.</li>
-      <li>Do you need to send in additional information about the cohort not associated with the validation? (e.g. I will be sending in a separate csv file with STUDY_ID and Recruited Date as I only require HES records after the Recruited Date)</li>
-    </ul>
-  </div>
-</details>
-  <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
-</div> -->
-
-<p>Using the text box, let us know of any additional, relevant information about your Participant linkage requirements that you have not been able to capture on this page (optional).</p>
-<textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
-
 </form>
 
 

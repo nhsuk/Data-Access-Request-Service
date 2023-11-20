@@ -73,7 +73,7 @@ Data Access Request Service
 
 <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
 <a class="nhsuk-header__navigation-link" href="/dashboard/">
-Apply for or Manage DSA
+Manage applications
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -82,7 +82,7 @@ Apply for or Manage DSA
 
 <li class="nhsuk-header__navigation-item">
 <a class="nhsuk-header__navigation-link" href="/dashboard/dsa/status-expire">
-Active DSAs
+Manage DSAs
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -157,7 +157,7 @@ Signout
 
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/participants/legal-bases-upload-consent">
+<a class="nhsuk-back-link__link" href="/participants/duty-of-confidentiality">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
@@ -179,12 +179,15 @@ Upload National Health Service Act 2006 - s251 - 'Control of patient information
 
 
 <div class="nhsuk-inset-text">
-  <span class="nhsuk-u-visually-hidden">Information: </span>
+  <span class="nhsuk-u-visually-hidden">Information: </span> 
   <p>Your document uploads might include a letter from the Confidentiality Advising Group (CAG) that supports the application Section 251 (s251) or another CAG document that supports s251.</p>
-  <p>Get help <a href="https://www.hra-decisiontools.org.uk/consent/examples.html" target="_blank">improving your consent documentation</a> </p>
+  <!-- <p>Get help <a href="https://www.hra-decisiontools.org.uk/consent/examples.html" target="_blank">improving your consent documentation</a> </p> -->
 </div>
 
-
+<div class="nhsuk-form-group">
+  <p>Provide your own description or name for the document</p>
+  <input class="nhsuk-input nhsuk-input--width-30" id="example-with-hint-text" name="example-with-hint-text" type="text" aria-describedby="example-with-hint-text-hint" inputmode="numeric">
+</div>
 
 <div class="nhsuk-form-group">
 <label class="nhsuk-label" for="file-upload-1">
@@ -208,7 +211,7 @@ View file guidance
 
 <div class="nhsuk-u-padding-bottom-9"></div>
 <p>
-<a href="participants/added-legal-bases-upload-consent" class="nhsuk-button">Continue</a><br />
+<a href="/participants/added-legal-bases-upload-consent" class="nhsuk-button">Continue</a><br />
 <!--<a href="#">Return to this application later</a>-->
 </p>
 

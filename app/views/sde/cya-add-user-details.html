@@ -41,6 +41,9 @@ DARS - NHS
   .font-w-n{
     font-weight: normal !important;
   }
+  .noborder{
+    border-bottom: none !important;
+  }
 </style>
 
 
@@ -88,7 +91,7 @@ Secure Data Environment Service
 
 
 <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
-<a class="nhsuk-header__navigation-link" href="https://edar.herokuapp.com/sde">
+<a class="nhsuk-header__navigation-link" href="https://edar.herokuapp.com/sde/manage-users">
 Manage users
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -97,27 +100,26 @@ Manage users
 </li>
 
 <li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="/sde/view-signed-agreement">
-View signed SDE agreement
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
-
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="https://edar.herokuapp.com/sde">
-Help
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
-
-
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="/guidance">
+<a class="nhsuk-header__navigation-link" href="#">
 Guidance
+<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+</svg>
+</a>
+</li>
+
+<li class="nhsuk-header__navigation-item ">
+<a class="nhsuk-header__navigation-link" href="/sde/view-signed-agreement">
+View SDE agreement
+<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+</svg>
+</a>
+</li>
+
+<li class="nhsuk-header__navigation-item ">
+<a class="nhsuk-header__navigation-link" href="#">
+Contact
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -180,14 +182,14 @@ Check user details
 <dl class="nhsuk-summary-list">
 
  <div class="nhsuk-summary-list__row summarylist-col-adjust">
-    <dt class="nhsuk-summary-list__key">
+    <dt class="nhsuk-summary-list__key noborder">
         First name
     </dt>
-    <dd class="nhsuk-summary-list__value">
-        Hardik 
+    <dd class="nhsuk-summary-list__value noborder">
+        John 
     </dd>
 
-    <dd class="nhsuk-summary-list__actions">
+    <dd class="nhsuk-summary-list__actions noborder">
       <a href="#">
         Change<span class="nhsuk-u-visually-hidden">Change</span>
       </a>
@@ -197,17 +199,17 @@ Check user details
   </div>
 
   <div class="nhsuk-summary-list__row summarylist-col-adjust">
-    <dt class="nhsuk-summary-list__key">
+    <dt class="nhsuk-summary-list__key noborder">
         Last name
     </dt>
-    <dd class="nhsuk-summary-list__value">
-        Savani 
+    <dd class="nhsuk-summary-list__value noborder">
+        Smith 
     </dd>
 
-    <dd class="nhsuk-summary-list__actions">
-      <a href="#">
+    <dd class="nhsuk-summary-list__actions noborder">
+      <!-- <a href="#">
         Change<span class="nhsuk-u-visually-hidden">Change</span>
-      </a>
+      </a> -->
 
     </dd>
 
@@ -222,9 +224,9 @@ Check user details
     </dd>
 
     <dd class="nhsuk-summary-list__actions">
-      <a href="#">
+   <!--    <a href="#">
         Change<span class="nhsuk-u-visually-hidden">Change</span>
-      </a>
+      </a> -->
 
     </dd>
   </div>
@@ -235,7 +237,7 @@ Check user details
       VD memory size
     </dt>
     <dd class="nhsuk-summary-list__value">
-      32GB
+      4GB
     </dd>
 
     <dd class="nhsuk-summary-list__actions">
@@ -273,22 +275,22 @@ Check user details
 
 
 <footer role="contentinfo">
-<div class="nhsuk-footer" id="nhsuk-footer">
-<div class="nhsuk-width-container">
-<h2 class="nhsuk-u-visually-hidden">Support links</h2>
-<ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
-<li class="nhsuk-footer__list-item"><a href="/about-us" class="nhsuk-footer__list-item-link" target="_blank">About us</a></li>
-<li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility</a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/contact-us/freedom-of-information" class="nhsuk-footer__list-item-link" target="_blank">Freedom of information</a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/privacy-and-cookies" class="nhsuk-footer__list-item-link" target="_blank">Privacy and cookies</a></li>
-<li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
-<li class="nhsuk-footer__list-item"><a href="/contact-us" class="nhsuk-footer__list-item-link" target="_blank">Contact us </a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/terms-and-conditions" class="nhsuk-footer__list-item-link" target="_blank">Terms and conditions </a></li>
-<li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/data" class="nhsuk-footer__list-item-link" target="_blank">Data</a></li>
-</ul>
-<p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
-</div>
-</div>
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Accessibility</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Freedom of information</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Privacy and cookies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Contact us </a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Terms and conditions </a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Data</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
 </footer>
 
 

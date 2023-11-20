@@ -32,7 +32,11 @@ DARS - NHS
         }
 
         if(document.getElementById('optiontwo').checked) {
-            document.getElementById('linkid').href = "/participants/legal-bases-upload-s251";
+            document.getElementById('linkid').href = "/participants/legal-bases-upload-consent-new";
+        }
+
+        if(document.getElementById('optionthree').checked) {
+            document.getElementById('linkid').href = "/participants/legal-bases-cohort-new";
         }
 
     }
@@ -84,7 +88,7 @@ Data Access Request Service
 
 <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
 <a class="nhsuk-header__navigation-link" href="/dashboard/">
-Apply for or Manage DSA
+Manage applications
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -93,7 +97,7 @@ Apply for or Manage DSA
 
 <li class="nhsuk-header__navigation-item">
 <a class="nhsuk-header__navigation-link" href="/dashboard/dsa/status-expire">
-Active DSAs
+Manage DSAs
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -185,82 +189,48 @@ Go back</a>
 <br />
 <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
 About the Participants</span>
-Select the legal basis for sending Participant data to NHS England: 
+Have the participants consented to have their confidential data shared with NHS England? 
 </h1>
 
-<div class="nhsuk-inset-text">
-  <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>NHS England requires you to provide a legal basis for any identifiable data you send to us. Select the legal basis or bases.</p>
-  <p>You will need to provide supporting evidence for all legal bases selected.</p>
-  <!-- <p>Remember, which ever legal basis you select, you must provide full supporting evidence.</p> -->
-  <p>You will be asked to upload supporting evidence of your legal basis or bases after you have selected all the data sets you require. </p>
-</div>
+<p>Under UK common law you have a duty of confidentiality to the participants. This duty of confidentiality can be met by ensuring that the participants have consented to and therefore reasonably expect you to share their data with NHS England. </p>
+<p>If you select yes, on the next page, you will be asked to provide a copy of the consent materials used. </p>
+<p>Your Data Protection Officer or Information Governance Team may be able to help establish whether the consent, that's in place, meets this duty of confidentiality.</p>
 
 
-<table role="table" class="nhsuk-table-responsive">
-  <caption class="nhsuk-table__caption">Choose your legal basis or bases</caption>
-  <thead role="rowgroup" class="nhsuk-table__head">
-    <tr role="row">
-      <th role="columnheader" class="" scope="col">
-        Participants
-      </th>
-      <th role="columnheader" class="" scope="col">
-        Legal Basis
-      </th>
-    </tr>
-  </thead>
-  <tbody class="nhsuk-table__body">
-   
-    <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Processing </span>
-        <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input"name="checkbox" id="optionone" type="checkbox">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="optionone">
-          </label>
-        </div>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Legal Basis </span>Consent (Reasonable Expectation) 
-      </td>
-    </tr>
-      <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Processing </span>
-        <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input"name="checkbox" id="optiontwo" type="checkbox">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="optiontwo">
-          </label>
-        </div>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Legal Basis </span>National Health Service Act 2006 - s251 - 'Control of patient information'.
-      </td>
-    </tr>
-    <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Processing</span>
-        <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-          </label>
-        </div>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Legal Basis </span>Other
-        <div class="nhsuk-hint" id="example-hint">
-    Provide information in the text box 
+<fieldset class="nhsuk-fieldset">
+
+  <div class="nhsuk-form-group">
+
+    <div class="nhsuk-radios">
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+          Yes, all have consented 
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+         Yes, some have consented 
+        </label>
+
+      </div>
+
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionthree" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-4">
+        No, none have consented
+        </label>
+      </div>
+
+
+    </div>
   </div>
 
-<div class="nhsuk-u-padding-bottom-1"></div>
-<input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text"><br/>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
+</fieldset>
 
 
 
@@ -269,11 +239,6 @@ Select the legal basis for sending Participant data to NHS England:
 <br />
 <!--<a href="#">Return to this application later</a>-->
 </p>
-
-<!-- <p>
-<a href="/participants/legal-bases-upload-consent" class="nhsuk-button">Continue</a><br />
-<a href="#">Return to this application later</a>
-</p> -->
 
 
 </div>  

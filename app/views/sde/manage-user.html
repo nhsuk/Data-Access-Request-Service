@@ -98,9 +98,9 @@ View signed SDE agreement
 </a>
 </li>
 
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="https://edar.herokuapp.com/sde">
-Help
+<li class="nhsuk-header__navigation-item nav-news">
+<a class="nhsuk-header__navigation-link" href="#">
+Guidance
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -170,7 +170,7 @@ Add, update, or remove users</h1>
 </div>
 
 <p>
-<a href="/sde/point-of-contact" class="nhsuk-button">Add new user</a><br />
+<a href="/sde/add-new-user-details" class="nhsuk-button">Add new user</a><br />
 </p>
 
 
@@ -183,7 +183,7 @@ Add, update, or remove users</h1>
         User name
       </th>
       <th role="columnheader" class="" scope="col">
-        Last logged in
+        Last induction sent
       </th>
       <th role="columnheader" class="" scope="col">
 
@@ -196,11 +196,25 @@ Add, update, or remove users</h1>
   </thead>
   <tbody class="nhsuk-table__body">
     <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">User name </span>John Smith
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Last logged in </span> -
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Edit </span><a href="/sde/added-user-details">View / Edit</a>
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">View </span> <a href="#">Resend Induction invite</a>
+          </td>
+        </tr>
+    <tr role="row" class="nhsuk-table__row">
       <td role="cell" class="nhsuk-table__cell">
         <span class="nhsuk-table-responsive__heading"> </span>Cameron Baker
       </td>
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last logged in </span>22 January 2023
+        <span class="nhsuk-table-responsive__heading">Last induction sent </span>22 January 2023
       </td>
       <td role="cell" class="nhsuk-table__cell">
         <span class="nhsuk-table-responsive__heading"></span><a href="#">View / Edit</a>
@@ -215,7 +229,7 @@ Add, update, or remove users</h1>
         <span class="nhsuk-table-responsive__heading"></span>Bella Bond
       </td>
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last logged in </span>  12 March 2023
+        <span class="nhsuk-table-responsive__heading">Last induction sent </span>  12 March 2023
       </td>
       <td role="cell" class="nhsuk-table__cell">
         <span class="nhsuk-table-responsive__heading"></span><a href="#">View / Edit</a>
@@ -458,14 +472,14 @@ Add, update, or remove users</h1>
     <div class="nhsuk-width-container">
       <h2 class="nhsuk-u-visually-hidden">Support links</h2>
       <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
-        <li class="nhsuk-footer__list-item"><a href="/about-us" class="nhsuk-footer__list-item-link" target="_blank">About us</a></li>
-        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility</a></li>
-        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/contact-us/freedom-of-information" class="nhsuk-footer__list-item-link" target="_blank">Freedom of information</a></li>
-        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/privacy-and-cookies" class="nhsuk-footer__list-item-link" target="_blank">Privacy and cookies</a></li>
-        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
-        <li class="nhsuk-footer__list-item"><a href="/contact-us" class="nhsuk-footer__list-item-link" target="_blank">Contact us </a></li>
-        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/about-nhs-digital/terms-and-conditions" class="nhsuk-footer__list-item-link" target="_blank">Terms and conditions </a></li>
-        <li class="nhsuk-footer__list-item"><a href="https://digital.nhs.uk/data" class="nhsuk-footer__list-item-link" target="_blank">Data</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Accessibility</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Freedom of information</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Privacy and cookies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Contact us </a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Terms and conditions </a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Data</a></li>
       </ul>
       <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
     </div>

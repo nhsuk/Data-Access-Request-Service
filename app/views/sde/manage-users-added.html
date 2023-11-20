@@ -82,7 +82,7 @@ Secure Data Environment Service
 
 <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
 <a class="nhsuk-header__navigation-link" href="https://edar.herokuapp.com/sde/manage-users">
-Manage users
+Home
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -96,11 +96,11 @@ Guidance
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
 </a>
-</li>
+</li>   
 
 <li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="/sde/view-signed-agreement">
-View SDE agreement
+<a class="nhsuk-header__navigation-link" href="#">
+Updates
 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
 </svg>
@@ -154,13 +154,13 @@ Signout
 <!-- Start Main Section-->
 
 <div class="nhsuk-width-container ">
-<!-- <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/sde/">
+<div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
+<a class="nhsuk-back-link__link" href="/sde/select-dsa-manage-users">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
-Go back</a>
-</div>  -->
+Go back to select DSA </a>
+</div>
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
 <div class="nhsuk-grid-row">
 
@@ -172,18 +172,18 @@ Go back</a>
 <h1>
 <span class="nhsuk-caption-l"><span class="nhsuk-u-visually-hidden"> - </span>
 </span>
-Add, update, or remove users</h1> 
+Add, update, or remove users</h1>
 
-<p>Make sure you have read the information on the <br/><a href="https://digital.nhs.uk/services/data-access-request-service-dars/data-access-request-service-dars-charges" target="_blank">SDE service charges for user accounts and additional licences (opens in a new window)</a>.</p>
+<p>Make sure you have read the information on the <br/><a href="https://digital.nhs.uk/services/secure-data-environment-service#charges-to-access-sde" target="_blank">SDE service charges for user accounts and additional licences (opens in a new window)</a>.</p>
 
 <!-- <p>Deactivating a user will temporarily remove their access to the SDE. You will not be charged for any deactivated user accounts. </p>
 <p>If you wish to permanently delete a user, select ‘Delete’ from the Active user tab. </p> -->
 <p>Note: all users are provided with 4GB of memory size within their environment as standard. If any users require an upgrade to a larger memory size, contact the service team at <a href="#">enquiries@nhsdigital.nhs.uk</a>. </p>
-</div>  
+</div>
 </div>
 
 <p>
-<a href="/sde/add-new-user-details" class="nhsuk-button">Add new user</a><br />
+<a href="/sde/add-new-user-details" class="nhsuk-button">Add new users</a><br />
 </p>
 
 
@@ -198,7 +198,7 @@ Add, update, or remove users</h1>
 
       <li class="nhsuk-tabs__list-item">
       <a class="nhsuk-tabs__tab" href="#in-induction">
-        Pending induction (3)
+        Pending induction (2)
       </a>
     </li>
 
@@ -213,9 +213,10 @@ Add, update, or remove users</h1>
         Deactivated (3)
       </a>
     </li>
-   <li class="nhsuk-tabs__list-item">
+
+<li class="nhsuk-tabs__list-item">
       <a class="nhsuk-tabs__tab" href="#delete">
-        Delete (1)
+        Deleted (1)
       </a>
     </li>
 
@@ -228,34 +229,36 @@ Add, update, or remove users</h1>
       <thead role="rowgroup" class="nhsuk-table__head">
         <tr role="row">
           <th role="columnheader" class="" scope="col">
-            User name  
+            User name
           </th>
           <th role="columnheader" class="" scope="col">
             Last induction sent
           </th>
           <th role="columnheader" class="" scope="col">
-            
+
           </th>
           <th role="columnheader" class="" scope="col">
-            
+
           </th>
         </tr>
       </thead>
       <tbody class="nhsuk-table__body">
+
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">User name </span>John Smith
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Last logged in </span> -
+            <span class="nhsuk-table-responsive__heading">Last logged in </span>-
           </td>
           <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">Edit </span><a href="/sde/added-user-details">View / Edit</a>
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">View </span> <a href="#">Resend Induction invite</a>
+            <span class="nhsuk-table-responsive__heading">View </span><a href="#">Resend Induction invite</a>
           </td>
         </tr>
+
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">User name </span>Bella Butler
@@ -264,7 +267,7 @@ Add, update, or remove users</h1>
             <span class="nhsuk-table-responsive__heading">Last logged in </span>01 March 2023
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Edit </span><a href="#">View / Edit</a>
+            <span class="nhsuk-table-responsive__heading">Edit </span><a href="/sde/user-details">View / Edit</a>
           </td>
           <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">View </span><a href="#">Resend Induction invite</a>
@@ -295,19 +298,19 @@ Add, update, or remove users</h1>
       <thead role="rowgroup" class="nhsuk-table__head">
         <tr role="row">
           <th role="columnheader" class="" scope="col">
-            User name  
+            User name
           </th>
           <th role="columnheader" class="" scope="col">
             Last logged in
           </th>
           <th role="columnheader" class="" scope="col">
-            
+
           </th>
           <th role="columnheader" class="" scope="col">
-            
+
           </th>
           <th role="columnheader" class="" scope="col">
-            
+
           </th>
         </tr>
       </thead>
@@ -391,7 +394,7 @@ Add, update, or remove users</h1>
           <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">Last logged in </span>19 December 2022
           </td>
-          <td role="cell" class="nhsuk-table__cell">  
+          <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">View </span><a href="#">View / Edit</a>
           </td>
    <td role="cell" class="nhsuk-table__cell">
@@ -453,16 +456,19 @@ Add, update, or remove users</h1>
       <thead role="rowgroup" class="nhsuk-table__head">
         <tr role="row">
           <th role="columnheader" class="" scope="col">
-            User name  
+            User name
           </th>
           <th role="columnheader" class="" scope="col">
             Date deactivated
           </th>
           <th role="columnheader" class="" scope="col">
-            
+
           </th>
            <th role="columnheader" class="" scope="col">
-            
+
+          </th>
+           <th role="columnheader" class="" scope="col">
+
           </th>
         </tr>
 
@@ -470,7 +476,7 @@ Add, update, or remove users</h1>
       <tbody class="nhsuk-table__body">
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">User name </span>Cameron Baker
+            <span class="nhsuk-table-responsive__heading">User name </span>Austin Vo
           </td>
           <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">Last logged in </span>22 January 2023
@@ -479,13 +485,16 @@ Add, update, or remove users</h1>
             <span class="nhsuk-table-responsive__heading">View </span><a href="#">View / Edit</a>
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">View </span><a href="#">Reactivate</a>
+            <span class="nhsuk-table-responsive__heading">Reactivate </span><a href="#">Reactivate</a>
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Delete </span><a href="#">Delete</a>
           </td>
         </tr>
 
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">User name </span>Bella Bond
+            <span class="nhsuk-table-responsive__heading">User name </span>Joshua Gupta
           </td>
           <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">Last logged in </span>12 March 2023
@@ -494,13 +503,16 @@ Add, update, or remove users</h1>
             <span class="nhsuk-table-responsive__heading">View </span><a href="#">View / Edit</a>
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">View </span><a href="#">Reactivate</a>
+            <span class="nhsuk-table-responsive__heading">Reactivate </span><a href="#">Reactivate</a>
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Delete </span><a href="#">Delete</a>
           </td>
         </tr>
 
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">User name </span>Connor Butler
+            <span class="nhsuk-table-responsive__heading">User name </span>Mateo Choi
           </td>
           <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">Last logged in </span>23 May 2023
@@ -509,13 +521,18 @@ Add, update, or remove users</h1>
             <span class="nhsuk-table-responsive__heading">View </span><a href="#">View / Edit</a>
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">View </span><a href="#">Reactivate</a>
+            <span class="nhsuk-table-responsive__heading">Reactivate </span><a href="#">Reactivate</a>
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Delete </span><a href="#">Delete</a>
           </td>
         </tr>
       </tbody>
     </table>
 
   </div>
+
+
 
 <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="delete">
 
@@ -524,10 +541,13 @@ Add, update, or remove users</h1>
       <thead role="rowgroup" class="nhsuk-table__head">
         <tr role="row">
           <th role="columnheader" class="" scope="col">
-            User name  
+            User name
           </th>
           <th role="columnheader" class="" scope="col">
             Date deleted
+          </th>
+          <th role="columnheader" class="" scope="col">
+
           </th>
         </tr>
 
@@ -540,12 +560,13 @@ Add, update, or remove users</h1>
           <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">Last logged in </span>22 January 2023
           </td>
-        </tr>
+          <td><span class="nhsuk-table-responsive__heading">View</span><a href="#">View</a></td>
+        </tr> 
       </tbody>
     </table>
 
   </div>
-  
+
 
 </div>
 

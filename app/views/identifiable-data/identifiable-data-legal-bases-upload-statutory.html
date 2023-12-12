@@ -162,7 +162,7 @@ Signout
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
 Go back</a>
-</div>   
+</div>
 
 
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
@@ -178,20 +178,24 @@ Statutory exemption to flow confidential data without consent
 </h1>
 
 
-<!-- <div class="nhsuk-inset-text">
-  <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>Lorem Ipsum</p>
-</div> -->
-
-
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="select-1">
+    Evidence type
+  </label>
+  <select class="nhsuk-select" id="select-1" name="select-1">
+    <option value="1" selected>Select type</option>
+    <option value="2">Consent Form</option>
+    <option value="3">Patient Information</option>
+      <option value="3">Patient/GP Letters</option>
+        <option value="3">Section 251 Support</option>
+  </select>
+</div>
+<br />
 <div class="nhsuk-form-group">
   <label class="nhsuk-label" for="input-width-10">
-    Document name 
+    Provide your own description or name for the document (character limit 50)
   </label>
-  <div class="nhsuk-hint" id="example-with-hint-text-hint">
-    Provide the document name in the text box below 
-  <input class="nhsuk-input nhsuk-input--width-10" id="example-with-hint-text" name="example-with-hint-text" type="text" aria-describedby="example-with-hint-text-hint" inputmode="numeric">
-</div>
+  <textarea class="nhsuk-textarea" id="example" name="example" rows="3" aria-describedby="example-hint"></textarea>
 <br />
 
 <div class="nhsuk-form-group">
@@ -221,7 +225,7 @@ View file guidance
 </p>
 
 
-</div>  
+</div>
 </div>
 </main>
 </div>

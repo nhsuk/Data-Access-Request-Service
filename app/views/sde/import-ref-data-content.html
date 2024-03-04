@@ -27,6 +27,16 @@ DARS - NHS
   .download-application-summary{
     text-align: right !important;
   }
+  .nhsuk-tag{
+    float: left !important;
+  }
+  .alert-panel-sde{
+    background-color: #d6ebff;
+    padding: 10px !important;
+    border-left: 3px solid #005eb8;
+    font-weight: bold;
+}
+  }
 </style>
   <script>
     function myFunction() {
@@ -40,6 +50,7 @@ DARS - NHS
         }
 
     }
+
 </script>
 
 </head>
@@ -131,11 +142,6 @@ Signout
 </a>
 </li>
 
-
-
-
-
-
 </ul>
 </div>
 </nav>
@@ -152,56 +158,76 @@ Signout
 
 <div class="nhsuk-width-container ">
 <div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
-<a class="nhsuk-back-link__link" href="/sde/import-ref-data-upload">
+<a class="nhsuk-back-link__link" href="/sde/upload">
 <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
 <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
 </svg>
 Go back</a>
 </div>
-
-
+<br />
+<!-- <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Important
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">
+      There are some potential errors with your file
+    </p>
+    <p>The auto check identified some errors in the columns</p>
+    <p>You should do one of the following:</p>
+  <ul class="nhsuk-list nhsuk-list-bullet">
+    <li>Amend the columns below and resubmit the file</li>
+    <li>Continue to submit the output request</li>
+  </ul>
+  <p>Check the <a href="#">output disclosure rules</a> for guidance on approved formats</p>
+  </div>
+  </div> -->
 <!-- Heading  -->
 <main class="nhsuk-main-wrapper " id="maincontent" role="main">
   <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
+    <div class="nhsuk-grid-column-full">
 <br>
 <h1>
-Import reference data</h1>
+Uploaded file</h1>
 
-<p>Use this page to upload a reference data file, and request for the data to be added to the Secure Data Environment. </p>
 
-<h3>Before you upload</h3>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+   <p>Filename</p>
+    <dl class="nhsuk-summary-list">
+    <div class="nhsuk-summary-list__row">
 
-<p>Make sure you have followed the guidance on <a href="#">how to import reference data (opens in a new window)</a>.</p>
-
-<div class="nhsuk-inset-text">
-  <span class="nhsuk-u-visually-hidden">Information: </span>
-
-<ul class="nhsuk-list nhsuk-list--bullet">
-  <li>Ensure that the CSV headers, columns and rows meet the formatting requirements.</li>
-  <li>Uploading a file with the same name will overwrite the original file in the environment.</li>
-  <li>You can only upload up to 10 files a day. If you submit more, additional files will be checked the following day and may incur a charge.</li>
-  <li>To ensure the data is approved, it must not contain any Personal Identifiable Information (PII).</li>
-</ul>
+    <dd class="nhsuk-summary-list__value">
+    1234.pdf
+    </dd>
+    <dd class="nhsuk-summary-list__actions">
+    <a href="/sde/upload">
+    Remove file<span class="nhsuk-u-visually-hidden"> name</span>
+    </a>
+    </dd>
+  </div>
+  <br />
+  <a href="#">Upload another file</a>
 </div>
+
+
+
+</div>
+
+
+<br><br>
+<p><a href="/sde/import-ref-description" class="nhsuk-button nhsuk-button-save-continue"> Continue</a>&nbsp; &nbsp;<a href="#" class="nhsuk-button nhsuk-button--secondary nhsuk-button-save-continue">Cancel</a><br>
+<!--<a href="#">Return to this application later</a>--></p>
 
 <br>
-<h4>Upload your file</h4>
-<p>you can upload one file at a time.</p>
-<div class="nhsuk-form-group">
-<input class="nhsuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
-</div>
-<div>
-  <br><br>
-  <p><a href="/sde/import-ref-data-uploaded" class="nhsuk-button nhsuk-button-save-continue"> Upload</a>&nbsp; &nbsp;<a href="#" class="nhsuk-button nhsuk-button--secondary nhsuk-button-save-continue">Cancel</a><br>
-  <!--<a href="#">Return to this application later</a>--></p>
-  </div>
 
 
 
 
 </div>
-<br />
+
 
 <div class="nhsuk-u-padding-bottom-9"></div>
 <!-- <p>

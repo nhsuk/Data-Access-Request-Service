@@ -180,38 +180,40 @@ Lorem Ipsum
   <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text">
   </div>
 
-  <div class="govuk-form-group">
+  <form>
 
-  <fieldset class="govuk-fieldset">
-  <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-  Draft completion
-  </legend>
+  <div class="nhsuk-form-group">
 
-  <div class="govuk-checkboxes govuk-checkboxes--small js-auto-submit" data-module="govuk-checkboxes">
-  <div class="govuk-checkboxes__item">
-  <input class="govuk-checkboxes__input" id="filterCompleteStatus" name="[filterCompleteStatus]" type="checkbox" value="Complete">
-  <label class="govuk-label govuk-checkboxes__label" for="filterCompleteStatus">
-  Complete
-  </label>
+    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+      <div class="nhsuk-checkboxes">
+        <p>Filter by status</p>
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+            Pending induction
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+            Active
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+            Deactivated
+          </label>
+        </div>
+
+      </div>
+    </fieldset>
+
   </div>
 
-  <div class="govuk-checkboxes__item">
-  <input class="govuk-checkboxes__input" id="filterCompleteStatus-2" name="[filterCompleteStatus]" type="checkbox" value="Incomplete">
-  <label class="govuk-label govuk-checkboxes__label" for="filterCompleteStatus-2">
-  Incomplete
-  </label>
-  </div>
-
-  <div class="govuk-checkboxes__item">
-  <input class="govuk-checkboxes__input" id="filterCompleteStatus-3" name="[filterCompleteStatus]" type="checkbox" value="Has problems">
-  <label class="govuk-label govuk-checkboxes__label" for="filterCompleteStatus-3">
-  Has problems
-  </label>
-  </div>
-
-  </div>
-  </fieldset>
-  </div>
+</form>
 
 </div>
 <div class="nhsuk-grid-column-two-thirds">

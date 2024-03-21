@@ -12,7 +12,7 @@ DARS - NHS
 
 <link href="https://www.nhs.uk/" rel="preconnect">
 <link href="https://assets.nhs.uk/" rel="preconnect" crossorigin>
-
+<link href="https://design-system.service.gov.uk/stylesheets/govuk-frontend-b9e3489f7bd5800fb2018d526948d12f.min.css" rel="stylesheet" media="all">
 <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
 <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
 <link href="/css/main.css" rel="stylesheet">
@@ -249,6 +249,41 @@ Lorem Ipsum
 <a class="nhsuk-button" href="/sde/ext/add-new-user-details">Apply filters</a>
 </form>
 
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        Organisation
+      </h1>
+    </legend>
+    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation">
+          HM Revenue and Customs (HMRC)
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+          Employment Tribunal
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+          Ministry of Defence
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+          Department for Transport
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
 <!-- <form>
 
 <div class="nhsuk-form-group">

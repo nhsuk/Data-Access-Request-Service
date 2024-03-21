@@ -24,6 +24,9 @@ DARS - NHS
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
 <style type="text/css">
+.clear-filters{
+  float:right
+}
 .fixed-w{
   width: 30%;
 }
@@ -217,7 +220,7 @@ Lorem Ipsum
 
     <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
       <div class="nhsuk-checkboxes">
-        <p><strong>Filter by status</strong> <span style="float:right">Clear filters</span></p>
+        <p><strong>Filter by status</strong> <span class="clear-filters"><a href="#">Clear filters</a></span></p>
         <div class="nhsuk-checkboxes__item">
           <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
           <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">

@@ -215,75 +215,36 @@ Lorem Ipsum
   </div>
 <div class="nhsuk-u-padding-bottom-4"></div>
   <form>
-
-  <div class="nhsuk-form-group">
-
-    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-      <div class="nhsuk-checkboxes">
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
         <p><strong>Filter by status</strong> <span class="clear-filters"><a href="#">Clear filters</a></span></p>
-        <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-            Pending induction
-          </label>
+        <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation">
+              Pending induction
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+              Active
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+              Deactivated
+            </label>
+          </div>
         </div>
-
-        <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-            Active
-          </label>
-        </div>
-
-        <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
-            Deactivated
-          </label>
-        </div>
-
-      </div>
-    </fieldset>
-
-  </div>
+      </fieldset>
+    </div>
+  
 <a class="nhsuk-button" href="/sde/ext/add-new-user-details">Apply filters</a>
 </form>
 
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-      <h1 class="govuk-fieldset__heading">
-        Organisation
-      </h1>
-    </legend>
-    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
-        <label class="govuk-label govuk-checkboxes__label" for="organisation">
-          HM Revenue and Customs (HMRC)
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
-        <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
-          Employment Tribunal
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
-        <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
-          Ministry of Defence
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
-        <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
-          Department for Transport
-        </label>
-      </div>
-    </div>
-  </fieldset>
-</div>
+
 <!-- <form>
 
 <div class="nhsuk-form-group">

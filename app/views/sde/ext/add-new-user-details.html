@@ -157,13 +157,13 @@ Go back</a>
 <h1>
 Add new user details</h1>
 
-<p>We need some details about the user you want to add to the SDE. You can add additional users later.</p>
-<p>After you have added a user, they will receive a link by email to complete an online induction. Their account will be scheduled for activation once they have completed the induction. </p>
+<p>We need some details about the user. You can add additional users later.</p>
+<!-- <p>After you have added a user, they will receive a link by email to complete an online induction. Their account will be scheduled for activation once they have completed the induction. </p> -->
 
 
 <div class="nhsuk-inset-text">
   <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>You must ensure that the email address matches an organisation named in the DSA.</p>
+  <p>You must provide the user's correct work email, not a personal email address. For example - john.smith1@nhs.net</p>
 </div>
 
 <div class="nhsuk-form-group">
@@ -198,24 +198,34 @@ Add new user details</h1>
 
   <fieldset class="nhsuk-fieldset">
     <div class="nhsuk-radios">
-<p>Permissions</p>
+<p>Role</p>
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="mobile" aria-describedby="example-hints-1-item-hint">
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-          Analyst
+          Data Analyst
         </label>
         <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
-          Will have access to the SDE platform at cost
+          User can access data through the SDE platform. Data Analyst accounts are chanrged a standard fee of <strong>£380 per month</strong>.
         </div>
       </div>
 
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="landline" aria-describedby="example-hints-2-item-hint">
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
-          Admin
+          User Manager
         </label>
         <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
-          Can add and edit all users at no cost
+          User can add and manage other users on the SDE. User Manager accounts are <strong>not charged</strong>.
+        </div>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="landline" aria-describedby="example-hints-2-item-hint">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+          Both (Data Analyst and User Manager)
+        </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
+          User can access data and manage other users on the SDE. Account will be charged a standard fee of <strong>£380 per month</strong>.
         </div>
       </div>
 
@@ -230,7 +240,7 @@ Add new user details</h1>
         <div class="nhsuk-checkboxes__item">
           <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
           <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-            I confirm that the details I have provided are correct. I understand that the individual named above will be given access to the Secure Data Environment.
+            I confirm that these details are correct, and understand that this user will be given access to the Secure Data Environment.
           </label>
         </div>
 </div>
@@ -238,7 +248,7 @@ Add new user details</h1>
 <div class="nhsuk-u-padding-bottom-9"></div>
 <p>
 <a href="/sde/ext/user-added" class="nhsuk-button">Continue</a><br />
-<a href="#">Return to this page later</a>
+<!-- <a href="#">Return to this page later</a> -->
 </p>
 
 

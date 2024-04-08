@@ -198,14 +198,14 @@ Go back</a>
 Change Role for Emily Davis
 </h1>
 
-
-
 <div class="nhsuk-form-group">
-  <fieldset class="nhsuk-fieldset">
-    <div class="nhsuk-radios">
+
+  <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+    <div class="nhsuk-radios nhsuk-radios--conditional">
+
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="mobile" aria-describedby="example-hints-1-item-hint">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+        <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
           Data Analyst
         </label>
         <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
@@ -213,33 +213,37 @@ Change Role for Emily Davis
         </div>
       </div>
 
+
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="landline" aria-describedby="example-hints-2-item-hint">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
-          User Manager
+        <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+        User Manager
         </label>
         <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
           User can add and manage other users on the SDE. User Manager accounts are <strong>not charged</strong>.
         </div>
       </div>
 
+
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="landline" aria-describedby="example-hints-2-item-hint">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
-          Both (Data Analyst and User Manager)
+        <input class="nhsuk-radios__input" type="radio" id="optionthree" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-3">
+        Both (Data Analyst and User Manager)
         </label>
-        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-3-item-hint">
           User can access data and manage other users on the SDE. Account will be charged a standard fee of <strong>£380 per month</strong>.
         </div>
       </div>
+
 
     </div>
   </fieldset>
 
 </div>
 
-<p>
-<a href="/sde/ext/emily-davis" class="nhsuk-button">Continue</a></p>
+
+
+<p><a href="#" class="nhsuk-button nhsuk-button-save-continue bt-save-continue" onclick='myFunction()' id="linkid">Continue</a></p>
 
 
 </div>

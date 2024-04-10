@@ -25,17 +25,8 @@ DARS - NHS
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
 <style type="text/css">
-.nhsuk-icon{
-  vertical-align: middle;
-}
 .csv{
   padding-bottom: 20px;
-}
-.alert-panel-green{
-  border: solid 4px #007f3a;
-  padding: 10px;
-width: 600px;
-  font-weight: 600;
 }
 .clear-filters{
   float:right;
@@ -106,6 +97,7 @@ Secure Data Environment Service
 </div>
 
 <div class="l-pro-signlink">Hardik Savani&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout">Sign out</a></div>
+
 <div class="nhsuk-header__content" id="content-header">
 
 <div class="nhsuk-header__menu">
@@ -189,7 +181,7 @@ Signout
 <div class="nhsuk-width-container">
 <ol class="nhsuk-breadcrumb__list">
 <li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-209174-W2H3G</li>
-
+<li class="nhsuk-breadcrumb__item" style="float: right;"><a href="/sde/ext/select-dsa-one">Change agreement</a></li>
 </ol>
 </div>
 </nav>
@@ -211,33 +203,31 @@ Go back</a>
 
 
 
-<br />
-<h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
-University of Oxford</span>
-Manage users
-</h1>
+  <br />
+  <h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
+  University of Oxford</span>
+  Manage users
+  </h1>
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-one-third">
-  <a class="nhsuk-button" href="/sde/ext/add-new-user-details">Add a new user</a>
+    <a class="nhsuk-button" href="/sde/int/add-new-user-details">Add a new user</a>
   </div>
   <div class="nhsuk-grid-column-one-half">
-    <p class="alert-panel-green"><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
-        <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
-      </svg>John Smith added successfully.</p>
-  </div>
+      <p class="alert-panel-green"><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
+          <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+        </svg>John Smith added successfully.</p>
+    </div>
 </div>
-<br/>
+
 <div class="search">
-
 <div class="nhsuk-grid-column-one-third">
-
 <div class="nhsuk-u-padding-bottom-4"></div>
   <div class="nhsuk-form-group">
   <label class="nhsuk-label" for="input-width-10">
     <strong>Search</strong>
   </label>
   <div class="nhsuk-hint" id="contact-hint">
-    Search by first name, last name.
+    Search by first name, last name or email.
   </div>
   <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text"><div class="nhsuk-u-padding-bottom-4"></div>
   <a class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
@@ -274,13 +264,50 @@ Manage users
       </fieldset>
     </div>
 
-<a class="nhsuk-button" href="/sde/ext/add-new-user-details">Apply filters</a>
+<a class="nhsuk-button" href="#">Apply filters</a>
 </form>
+
+
+<!-- <form>
+
+<div class="nhsuk-form-group">
+
+  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+    <div class="nhsuk-checkboxes">
+      <p><strong>Filter by DSA</strong></p>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+          DSA-NIC-1234-v1
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+          DSA-NIC-4545-v3.8
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          DSA-NIC-4543-v2
+        </label>
+      </div>
+
+    </div>
+  </fieldset>
+
+</div>
+Add more Data wranglers role
+Keep the same journey i.e External
+
+</form>-->
+
 </div>
 
-
 <div class="nhsuk-grid-column-two-thirds">
-
   <p class="csv"><span><a href="#" class="r-export">Export all data (CSV)</a></span></p>
   <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible">
 
@@ -291,7 +318,7 @@ Manage users
         Name
       </th>
       <th role="columnheader" class="" scope="col">
-        Last logged in
+        Email address
       </th>
       <th role="columnheader" class="fixed-w" scope="col">
         Status
@@ -301,10 +328,10 @@ Manage users
   <tbody class="nhsuk-table__body">
     <tr role="row" class="nhsuk-table__row">
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Name </span><a href="/sde/ext/emily-davis">Emily Davis</a>
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="/sde/int/emily-davis">Emily Davis</a><br/><span class="role-fnt">Data Wrangler</span>
       </td>
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>15 January 2024
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>e.davis@dhsc.org.uk
       </td>
       <td role="cell" class="nhsuk-table__cell">
         <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--aqua-green">Active</strong>
@@ -312,10 +339,10 @@ Manage users
     </tr>
     <tr role="row" class="nhsuk-table__row">
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Mariya Patel</a><br/><span class="role-fnt">User Manager</span>
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">John Smith</a>
       </td>
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>11 February 2024
+        <span class="nhsuk-table-responsive__heading">Email address </span>j.smith2@dhsc.ac.uk
       </td>
       <td role="cell" class="nhsuk-table__cell">
         <!-- <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag nhsuk-tagblue">Pending induction</strong> -->
@@ -323,10 +350,10 @@ Manage users
     </tr>
     <tr role="row" class="nhsuk-table__row">
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Pamela Huber</a><br/><span class="role-fnt"> User Manager</span>
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Rachel Silver</a>
       </td>
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>18 February 2024
+        <span class="nhsuk-table-responsive__heading">Email address </span>rachel.s@leeds.org.uk
       </td>
       <td role="cell" class="nhsuk-table__cell">
         <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">Deactivated</strong>
@@ -334,10 +361,10 @@ Manage users
     </tr>
     <tr role="row" class="nhsuk-table__row">
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">David Francis</a><br/><span class="role-fnt"> User Manager</span>
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">David Francis</a>
       </td>
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>15 January 2024
+        <span class="nhsuk-table-responsive__heading">Email address </span>d.francis@dhsc.org.uk
       </td>
       <td role="cell" class="nhsuk-table__cell">
         <!-- <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag-aqua-green">Active</strong> -->
@@ -345,13 +372,68 @@ Manage users
     </tr>
     <tr role="row" class="nhsuk-table__row">
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">John Smith</a><br/><span class="role-fnt"> User Manager</span>
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Brian Okello</a>
       </td>
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>10 January 2024
+        <span class="nhsuk-table-responsive__heading">Email address </span>brian.okello@leeds.org.uk
       </td>
       <td role="cell" class="nhsuk-table__cell">
         <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag nhsuk-tag--blue">Pending induction</strong>
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Leo Cashin</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Email address </span>leocashin@dhsc.ac.uk
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">Deactivated</strong>
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Mariya Patel</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Email address </span>mariya@manchester.org,uk
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <!-- <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag-aqua-green">Active</strong> -->
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Barbara Angel</a><br/><span class="role-fnt">Data wrangler</span>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Email address </span>barb.a@yorkuni.ac.uk
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag nhsuk-tag--blue">Pending induction</strong>
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Vishal Gurudutt</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Email address </span>vishal.gurudutt@leedsuni.ac.uk
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">Deactivated</strong>
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Rachel Preece </a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Email addressn </span>rachelpreece@dhsc.org.uk
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--aqua-green">Active</strong>
       </td>
     </tr>
     <tr role="row" class="nhsuk-table__row">
@@ -359,62 +441,7 @@ Manage users
         <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Tom Hunter</a>
       </td>
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>22 January 2024
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">Deactivated</strong>
-      </td>
-    </tr>
-    <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Mateo Choi</a><br/><span class="role-fnt"> User Manager</span>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>15 January 2024
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--aqua-green">Active</strong>
-      </td>
-    </tr>
-    <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Michelle Flynn</a>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>10 January 2024
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag nhsuk-tag--blue">Pending induction</strong>
-      </td>
-    </tr>
-    <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Sarah Philips</a><br/><span class="role-fnt"> User Manager</span>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>22 January 2024
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">Deactivated</strong>
-      </td>
-    </tr>
-    <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Lisa Lenehan</a>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>15 January 2024
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--aqua-green">Active</strong>
-      </td>
-    </tr>
-    <tr role="row" class="nhsuk-table__row">
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Emily Snailham</a>
-      </td>
-      <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>10 January 2024
+        <span class="nhsuk-table-responsive__heading">Email address </span>tom.hunter@dhsc.org.uk
       </td>
       <td role="cell" class="nhsuk-table__cell">
         <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag nhsuk-tag--blue">Pending induction</strong>
@@ -425,7 +452,7 @@ Manage users
         <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Austin Vo</a>
       </td>
       <td role="cell" class="nhsuk-table__cell">
-        <span class="nhsuk-table-responsive__heading">Last Logged in </span>22 January 2024
+        <span class="nhsuk-table-responsive__heading">Email address </span>austin.v@manchesteruni.org.uk
       </td>
       <td role="cell" class="nhsuk-table__cell">
         <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">Deactivated</strong>
@@ -447,7 +474,7 @@ Manage users
   <tbody class="nhsuk-table__body">
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell "><strong class="nhsuk-tag nhsuk-tag--blue statuses-nhs-tag">PENDING&nbsp;INDUCTION</strong></td>
-      <td class="nhsuk-table__cell ">&nbsp;User has been sent induction assessment invite email but has not yet passed the assessment.</td>
+      <td class="nhsuk-table__cell ">&nbsp;User has not yet passed the induction assessment.</td>
     </tr>
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell "><strong class="nhsuk-tag nhsuk-tag--aqua-green">ACTIVE</strong></td>

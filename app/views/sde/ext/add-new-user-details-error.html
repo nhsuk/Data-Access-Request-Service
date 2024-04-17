@@ -152,10 +152,19 @@ Go back</a>
       </p>
       <ul class="nhsuk-list nhsuk-error-summary__list" role="list">
         <li>
-          <a href="#example-error-1">Date of birth must be in the past</a>
+          <a href="#example-error-1">Enter a first name</a>
         </li>
         <li>
-          <a href="#example-error-1">Date of birth must be in the past</a>
+          <a href="#example-error-2">Enter a last name</a>
+        </li>
+        <li>
+          <a href="#example-error-3">Email addresses do not match</a>
+        </li>
+        <li>
+          <a href="#example-error-4">Select a role</a>
+        </li>
+        <li>
+          <a href="#example-error-5">Select I confirm that these details are correct</a>
         </li>
       </ul>
     </div>
@@ -182,7 +191,7 @@ Add a new user</h1>
   <span class="nhsuk-error-message" id="name-error">
     <span class="nhsuk-u-visually-hidden">Error:</span> Enter a first name
   </span>
-  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-error">
+  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="#example-error-1" name="name" type="text" aria-describedby="name-error">
 </div>
 
 <div class="nhsuk-form-group nhsuk-form-group--error">
@@ -192,7 +201,7 @@ Add a new user</h1>
   <span class="nhsuk-error-message" id="name-error">
     <span class="nhsuk-u-visually-hidden">Error:</span> Enter a Last name
   </span>
-  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-error">
+  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="#example-error-2" name="name" type="text" aria-describedby="name-error">
 </div>
 
 <div class="nhsuk-form-group nhsuk-form-group--error">
@@ -205,7 +214,7 @@ Add a new user</h1>
   <span class="nhsuk-error-message" id="name-error">
     <span class="nhsuk-u-visually-hidden">Error:</span> Your email addresses must match
   </span>
-  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-error">
+  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="#example-error-3" name="name" type="text" aria-describedby="name-error">
 </div>
 
 <div class="nhsuk-form-group nhsuk-form-group--error">
@@ -218,7 +227,7 @@ Add a new user</h1>
   <span class="nhsuk-error-message" id="name-error">
     <span class="nhsuk-u-visually-hidden">Error:</span> Your email addresses must match
   </span>
-  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-error">
+  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="#example-error-4" name="name" type="text" aria-describedby="name-error">
 </div>
 <br />
 
@@ -240,7 +249,7 @@ Add a new user</h1>
 
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="example-error-1" name="example-error" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1" id="#example-error-4">
           Data Analyst
         </label>
         <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
@@ -272,61 +281,28 @@ Add a new user</h1>
   </fieldset>
 
 </div>
-
-<br/>
-<div class="nhsuk-form-group">
-  <fieldset class="nhsuk-fieldset">
-    <div class="nhsuk-radios">
-      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
-    <h6 class="nhsuk-fieldset__heading">
-      Role
-    </h6>
-  </legend>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="mobile" aria-describedby="example-hints-1-item-hint">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-          Data Analyst
-        </label>
-        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
-          User can access data through the SDE platform. Data Analyst accounts are charged a standard fee of <strong>£380 per month</strong>.
-        </div>
-      </div>
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="landline" aria-describedby="example-hints-2-item-hint">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
-          User Manager
-        </label>
-        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
-          User can add and manage other users on the SDE. User Manager accounts are <strong>not charged</strong>.
-        </div>
-      </div>
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="landline" aria-describedby="example-hints-2-item-hint">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
-          Both (Data Analyst and User Manager)
-        </label>
-        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
-          User can access data and manage other users on the SDE. Account will be charged a standard fee of <strong>£380 per month</strong>.
-        </div>
-      </div>
-
-    </div>
-  </fieldset>
-
-</div>
-
 <br />
-<div class="nhsuk-checkboxes">
 
+<form>
+  <div class="nhsuk-form-group nhsuk-form-group--error">
+    <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint contact-error">
+      <span class="nhsuk-error-message" id="contact-error">
+        <span class="nhsuk-u-visually-hidden">Error:</span> Select I confirm that these details are correct
+      </span>
+      <div class="nhsuk-checkboxes">
         <div class="nhsuk-checkboxes__item">
           <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
           <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
             I confirm that these details are correct, and understand that this user will be given access to the SDE.
           </label>
         </div>
-</div>
+
+      </div>
+    </fieldset>
+
+  </div>
+
+</form>
 
 <div class="nhsuk-u-padding-bottom-9"></div>
 <p>

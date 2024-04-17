@@ -154,6 +154,9 @@ Go back</a>
         <li>
           <a href="#example-error-1">Date of birth must be in the past</a>
         </li>
+        <li>
+          <a href="#example-error-1">Date of birth must be in the past</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -171,38 +174,93 @@ Add a new user</h1>
   <p>This must be the user's correct work email, not a personal email address. For example - john.smith1@nhs.net.</p>
 </div> -->
 
-<div class="nhsuk-form-group">
+
+<div class="nhsuk-form-group nhsuk-form-group--error">
   <label class="nhsuk-label" for="input-width-20">
     First name
   </label>
-
-  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+  <span class="nhsuk-error-message" id="name-error">
+    <span class="nhsuk-u-visually-hidden">Error:</span> Enter a first name
+  </span>
+  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-error">
 </div>
 
-<div class="nhsuk-form-group">
+<div class="nhsuk-form-group nhsuk-form-group--error">
   <label class="nhsuk-label" for="input-width-20">
     Last name
   </label>
-  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+  <span class="nhsuk-error-message" id="name-error">
+    <span class="nhsuk-u-visually-hidden">Error:</span> Enter a Last name
+  </span>
+  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-error">
 </div>
 
-<div class="nhsuk-form-group">
+<div class="nhsuk-form-group nhsuk-form-group--error">
   <label class="nhsuk-label" for="input-width-20">
     Email
   </label>
   <div class="nhsuk-hint" id="contact-hint">
       This must be the user's correct work email, not a personal email address. For example - john.smith1@nhs.net.
     </div>
-
-  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+  <span class="nhsuk-error-message" id="name-error">
+    <span class="nhsuk-u-visually-hidden">Error:</span> Your email addresses must match
+  </span>
+  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-error">
 </div>
 
-<div class="nhsuk-form-group">
+<div class="nhsuk-form-group nhsuk-form-group--error">
   <label class="nhsuk-label" for="input-width-20">
     Confirm their email
   </label>
-  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+  <div class="nhsuk-hint" id="contact-hint">
+      This must be the user's correct work email, not a personal email address. For example - john.smith1@nhs.net.
+    </div>
+  <span class="nhsuk-error-message" id="name-error">
+    <span class="nhsuk-u-visually-hidden">Error:</span> Your email addresses must match
+  </span>
+  <input class="nhsuk-input nhsuk-input--error" id="name" name="name" type="text" aria-describedby="name-error">
 </div>
+<br />
+
+
+<div class="nhsuk-form-group nhsuk-form-group--error">
+
+  <fieldset class="nhsuk-fieldset" aria-describedby="example-error-hint example-error-error">
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+      <h6 class="nhsuk-fieldset__heading">
+        Role
+      </h6>
+    </legend>
+
+    <div class="nhsuk-hint" id="example-error-hint">
+      This includes changing your last name or spelling your name differently.
+    </div>
+
+    <span class="nhsuk-error-message" id="example-error-error">
+      <span class="nhsuk-u-visually-hidden">Error:</span> Select yes if you have changed your name
+    </span>
+
+    <div class="nhsuk-radios">
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-error-1" name="example-error" type="radio" value="yes">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-error-1">
+          Yes
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-error-2" name="example-error" type="radio" value="no">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-error-2">
+          No
+        </label>
+      </div>
+
+    </div>
+  </fieldset>
+
+</div>
+
 <br/>
 <div class="nhsuk-form-group">
   <fieldset class="nhsuk-fieldset">

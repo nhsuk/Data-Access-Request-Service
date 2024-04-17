@@ -218,7 +218,7 @@ Add a new user</h1>
   <span class="nhsuk-error-message" id="name-error">
     <span class="nhsuk-u-visually-hidden">Error:</span> Your email addresses must match
   </span>
-  <input class="nhsuk-input nhsuk-input--error" id="name" name="name" type="text" aria-describedby="name-error">
+  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-error">
 </div>
 <br />
 
@@ -232,28 +232,40 @@ Add a new user</h1>
       </h6>
     </legend>
 
-    <div class="nhsuk-hint" id="example-error-hint">
-      This includes changing your last name or spelling your name differently.
-    </div>
-
     <span class="nhsuk-error-message" id="example-error-error">
-      <span class="nhsuk-u-visually-hidden">Error:</span> Select yes if you have changed your name
+      <span class="nhsuk-u-visually-hidden">Error:</span> Select a role
     </span>
 
     <div class="nhsuk-radios">
 
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="example-error-1" name="example-error" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-error-1">
-          Yes
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+          Data Analyst
         </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          User can access data through the SDE platform. Data Analyst accounts are charged a standard fee of <strong>£380 per month</strong>.
+        </div>
       </div>
 
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="example-error-2" name="example-error" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-error-2">
-          No
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+          User Manager
         </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
+          User can add and manage other users on the SDE. User Manager accounts are <strong>not charged</strong>.
+        </div>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-error-2" name="example-error" type="radio" value="no">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+          Both (Data Analyst and User Manager)
+        </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
+          User can access data and manage other users on the SDE. Account will be charged a standard fee of <strong>£380 per month</strong>.
+        </div>
       </div>
 
     </div>

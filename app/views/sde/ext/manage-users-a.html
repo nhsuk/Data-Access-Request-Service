@@ -198,7 +198,7 @@ Go back</a>
 <div class="nhsuk-error-summary__body">
   <ul class="nhsuk-list nhsuk-error-summary__list" role="list">
     <li>
-      <a href="#yes">Enter a search query</a>
+      <a href="#1">Enter a search query</a>
     </li>
   </ul>
 </div>
@@ -223,14 +223,17 @@ Manage users
 <div class="search">
 <div class="nhsuk-grid-column-one-third">
 <div class="nhsuk-u-padding-bottom-4"></div>
-  <div class="nhsuk-form-group">
+  <div class="nhsuk-form-group nhsuk-form-group--error">
   <label class="nhsuk-label" for="input-width-10">
     <strong>Search</strong>
   </label>
+  <span class="nhsuk-error-message" id="example-error">
+    <span class="nhsuk-u-visually-hidden">Error:</span> Enter your full name
+  </span>
   <div class="nhsuk-hint" id="contact-hint">
     Search by first name, last name.
   </div>
-  <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text"><div class="nhsuk-u-padding-bottom-4"></div>
+  <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text"><div class="nhsuk-u-padding-bottom-4"></div>
   <a class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
   Search
 </a>

@@ -28,16 +28,30 @@ DARS - NHS
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
 <style type="text/css">
+.govuk-checkboxes__item {
+        font-size: 19px;
+        font-size: 1.1875rem;
+        line-height: 1.31579;
+    }
+.govuk-checkboxes--small .govuk-checkboxes__item {
+    min-height: 0;
+    margin-bottom: 0;
+    padding-left: 34px;
+    float: left;
+}
 .govuk-checkboxes--small .govuk-checkboxes__input {
-    margin-left: -10px;
+    left: -10px;
 }
 .govuk-checkboxes__input {
+    cursor: pointer;
+    position: absolute;
     z-index: 1;
+    top: -2px;
+    left: -2px;
     width: 44px;
     height: 44px;
     margin: 0;
     opacity: 0;
-    cursor: pointer;
 }
 .govuk-checkboxes__label {
     align-self: center;

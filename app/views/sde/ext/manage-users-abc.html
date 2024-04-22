@@ -241,6 +241,9 @@ Go back</a>
     <li>
       <a href="#1">Search query must be 60 characters or less</a>
     </li>
+    <li>
+      <a href="#1">Select a filter</a>
+    </li>
   </ul>
 </div>
 </div>
@@ -280,6 +283,7 @@ Manage users
   <div class="nhsuk-hint" id="contact-hint">
     Search by first name, last name.
   </div>
+
   <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-10" id="1" name="test-width-10" type="text"><div class="nhsuk-u-padding-bottom-4"></div>
   <a class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
   Search
@@ -289,9 +293,12 @@ Manage users
   </div>
 <div class="nhsuk-u-padding-bottom-4"></div>
   <form>
-    <div class="govuk-form-group">
+    <div class="nhsuk-form-group nhsuk-form-group--error">
       <fieldset class="govuk-fieldset">
         <p><strong>Filter by status</strong> <span class="clear-filters"><a href="#">Clear filters</a></span></p>
+        <span class="nhsuk-error-message" id="contact-error">
+        <span class="nhsuk-u-visually-hidden">Error:</span> Select how you like to be contacted
+      </span>
         <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">

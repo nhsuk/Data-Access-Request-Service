@@ -14,6 +14,7 @@ DARS - NHS
 <link href="https://assets.nhs.uk/" rel="preconnect" crossorigin>
 <link href="/app/assets/sass/gov.css" rel="stylesheet" media="all">
 <link href="https://design-system.service.gov.uk/stylesheets/govuk-frontend-5479c061c873c40fc17333ceca82db86.min.css" rel="stylesheet" media="all">
+<link href="https://design-system.service.gov.uk/stylesheets/govuk-frontend-4a2651e798e356dfe0956b25e6fac751.min.css" rel="stylesheet" media="all">
 <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
 <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
 <link href="/css/main.css" rel="stylesheet">
@@ -25,6 +26,12 @@ DARS - NHS
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
 <style type="text/css">
+.nhsuk-header__navigation-list{
+  justify-content:flex-start !important;
+}
+.nav-margin{
+  margin-left: 100px !important;
+}
 .csv{
   padding-bottom: 20px;
 }
@@ -120,42 +127,25 @@ Secure Data Environment Service
 </p>
 <ul class="nhsuk-header__navigation-list">
 
+  <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
+  <a class="nhsuk-header__navigation-link" href="/sde/int/manage-users">
+  Home
+  <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+  </svg>
+  </a>
+  </li>
 
-<li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
-<a class="nhsuk-header__navigation-link" href="https://edar.herokuapp.com/sde/manage-users">
-Home
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
 
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="#">
-Guidance
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
 
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="#">
-Updates
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
-
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="#">
-Contact
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
+  <li class="nhsuk-header__navigation-item nav-margin">
+  <a class="nhsuk-header__navigation-link " href="/sde/int/contact">
+  Contact
+  <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+  </svg>
+  </a>
+  </li>
 
 
 <li class="nhsuk-header__navigation-item  l-signout-mob">
@@ -265,43 +255,6 @@ Go back</a>
 <a class="nhsuk-button" href="#">Apply filters</a>
 </form>
 
-
-<!-- <form>
-
-<div class="nhsuk-form-group">
-
-  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-    <div class="nhsuk-checkboxes">
-      <p><strong>Filter by DSA</strong></p>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-          DSA-NIC-1234-v1
-        </label>
-      </div>
-
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-          DSA-NIC-4545-v3.8
-        </label>
-      </div>
-
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
-          DSA-NIC-4543-v2
-        </label>
-      </div>
-
-    </div>
-  </fieldset>
-
-</div>
-Add more Data wranglers role
-Keep the same journey i.e External
-
-</form>-->
 
 </div>
 

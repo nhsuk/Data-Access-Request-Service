@@ -24,7 +24,14 @@ DARS - NHS
 <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
 <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
 
-
+<style type="text/css">
+.nhsuk-header__navigation-list{
+  justify-content:flex-start !important;
+}
+.nav-margin{
+  margin-left: 100px !important;
+}
+</style>
 
 
 
@@ -70,42 +77,25 @@ Secure Data Environment Service
 </p>
 <ul class="nhsuk-header__navigation-list">
 
+  <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
+  <a class="nhsuk-header__navigation-link" href="/sde/int/manage-users">
+  Home
+  <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+  </svg>
+  </a>
+  </li>
 
-<li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
-<a class="nhsuk-header__navigation-link" href="https://edar.herokuapp.com/sde/manage-users">
-Home
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
 
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="#">
-Guidance
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
 
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="#">
-Updates
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
-
-<li class="nhsuk-header__navigation-item ">
-<a class="nhsuk-header__navigation-link" href="#">
-Contact
-<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-</svg>
-</a>
-</li>
+  <li class="nhsuk-header__navigation-item nav-margin">
+  <a class="nhsuk-header__navigation-link " href="/sde/int/contact">
+  Contact
+  <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+  </svg>
+  </a>
+  </li>
 
 
 <li class="nhsuk-header__navigation-item  l-signout-mob">

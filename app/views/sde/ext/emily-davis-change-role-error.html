@@ -202,29 +202,43 @@ Change user role
 </h1>
 <p class="nhsuk-hint">Select a different role for this user.</p>
 
-<div class="nhsuk-form-group nhsuk-form-group--error">
+  <div class="nhsuk-form-group nhsuk-form-group--error">
 
-  <fieldset class="nhsuk-fieldset" aria-describedby="example-error-hint example-error-error">
-
-    <span class="nhsuk-error-message" id="example-error-error">
-      <span class="nhsuk-u-visually-hidden">Error:</span> Select a role
-    </span>
-
-    <div class="nhsuk-radios">
+  <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+    <div class="nhsuk-radios nhsuk-radios--conditional">
 
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="yes" name="example-error" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-error-1">
-          Yes
+        <input class="nhsuk-radios__input" type="radio" id="optionone" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+          Data Analyst
         </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-1-item-hint">
+          User can access data through the SDE platform. Data Analyst accounts are charged a standard fee of <strong>£380 per month</strong>.
+        </div>
       </div>
 
+
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="no" name="example-error" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-error-2">
-          No
+        <input class="nhsuk-radios__input" type="radio" id="optiontwo" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+        User Manager
         </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
+          User can add and manage other users on the SDE. User Manager accounts are <strong>not charged</strong>.
+        </div>
       </div>
+
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" type="radio" id="optionthree" name="radio">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-3">
+        Both (Data Analyst and User Manager)
+        </label>
+        <div class="nhsuk-hint nhsuk-radios__hint" id="example-hints-3-item-hint">
+          User can access data and manage other users on the SDE. Account will be charged a standard fee of <strong>£380 per month</strong>.
+        </div>
+      </div>
+
 
     </div>
   </fieldset>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+
+<title>
+DARS - NHS
+</title>
+
+<link href="https://www.nhs.uk/" rel="preconnect">
+<link href="https://assets.nhs.uk/" rel="preconnect" crossorigin>
+<link href="/app/assets/sass/gov.css" rel="stylesheet" media="all">
+<link href="https://design-system.service.gov.uk/stylesheets/govuk-frontend-5479c061c873c40fc17333ceca82db86.min.css" rel="stylesheet" media="all">
+<link href="https://design-system.service.gov.uk/stylesheets/govuk-frontend-4a2651e798e356dfe0956b25e6fac751.min.css" rel="stylesheet" media="all">
+<link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
+<link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/in-line.css" rel="stylesheet">
+<link href="/css/nhsuk.css" rel="stylesheet">
+<script src="/nhsuk-frontend/nhsuk.min.js" defer></script>
+<link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
+<link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
+<link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
+<style type="text/css">
+.csv{
+  padding-bottom: 20px;
+}
+.clear-filters{
+  float:right;
+  font-size: 16px;
+}
+.fixed-w{
+  width: 30%;
+}
+.nhsuk-\!-font-size-16{
+    font-size: 1rem !important;
+}
+.nhsuk-table__body tr td{
+  padding: 40px 0px !important;
+}
+.nhsuk-section-break--m{
+  margin-bottom: 0px !important;
+}
+.search .nhsuk-grid-column-one-third{
+  border:2px solid #d8dde0 !important;
+}
+.nhsuk-input--width-10{
+  max-width: 28ex !important;
+}
+  .statuses-nhs-tag {
+float: left !important;
+
+}
+.nhsuk-grid-column-two-thirds{
+      padding: 0 0px 0px 22px !important;
+}
+.l-signout{
+  float: right !important;
+  color: #fff !important;
+  padding-right: 20px;
+}
+.r-export{
+  float: right !important;
+}
+.nav-news{
+justify-content: flex-end !important;
+float: right !important;
+}
+.nhsuk-tag{
+  float: left !important;
+}
+.role-fnt{
+  font-size: 16px;
+  color: #505a5f;
+}
+.nhsuk-header__navigation-list{
+  justify-content:flex-start !important;
+}
+.nav-margin{
+  margin-left: 100px !important;
+}
+</style>
+</head>
+<body class="">
+
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+<a class="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
+
+<header class="nhsuk-header" role="banner">
+<div class="nhsuk-width-container nhsuk-header__container app-width-container">
+<div class="nhsuk-header__logo"><a class="nhsuk-header__link nhsuk-header__link--service " href="/sde/ext/welcome" aria-label="NHS digital service manual homepage">
+<svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" height="40" width="100">
+<path class="nhsuk-logo__background" d="M0 0h40v16H0z"></path>
+<path class="nhsuk-logo__text" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+</svg>
+<span class="nhsuk-header__service-name">
+Secure Data Environment Service
+</span>
+</a>
+</div>
+
+<div class="l-pro-signlink">Hardik Savani&nbsp;&nbsp;&nbsp;<a href="#" class="l-signout">Sign out</a></div>
+
+<div class="nhsuk-header__content" id="content-header">
+
+<div class="nhsuk-header__menu">
+<button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+</div>
+</div>
+
+</div>
+
+
+<nav class="nhsuk-header__navigation app-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+<div class="nhsuk-width-container app-width-container">
+<p class="nhsuk-header__navigation-title"><span id="label-navigation">Menu</span>
+<button class="nhsuk-header__navigation-close" id="close-menu">
+<svg class="nhsuk-icon nhsuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+</svg>
+<span class="nhsuk-u-visually-hidden">Close menu </span>
+</button>
+</p>
+<ul class="nhsuk-header__navigation-list">
+
+
+  <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
+  <a class="nhsuk-header__navigation-link" href="/sde/ext/manage-users">
+  Home
+  <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+  </svg>
+  </a>
+  </li>
+
+
+
+  <li class="nhsuk-header__navigation-item nav-margin">
+  <a class="nhsuk-header__navigation-link " href="/sde/ext/contact">
+  Contact
+  <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+  </svg>
+  </a>
+  </li>
+
+
+<li class="nhsuk-header__navigation-item  l-signout-mob">
+<a class="nhsuk-header__navigation-link" href="/">
+Signout
+<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+<path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+</svg>
+</a>
+</li>
+
+
+
+
+
+
+</ul>
+</div>
+</nav>
+
+</header>
+<nav class="nhsuk-breadcrumb app-breadcrumb">
+<div class="nhsuk-width-container">
+<ol class="nhsuk-breadcrumb__list">
+<li class="nhsuk-breadcrumb__item"><strong>Reference Number:</strong> DARS-NIC-209174-W2H3G</li>
+<li class="nhsuk-breadcrumb__item" style="float: right;"><a href="/sde/ext/change-agreement">Change agreement</a></li>
+</ol>
+</div>
+</nav>
+
+
+<div class="nhsuk-width-container ">
+<div class="nhsuk-back-link nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0">
+<a class="nhsuk-back-link__link" href="/sde/ext/dashboard">
+<svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+<path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+</svg>
+Go back</a>
+</div>
+
+
+<main class="nhsuk-main-wrapper " id="maincontent" role="main">
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+
+
+
+<br />
+<h1><span class="nhsuk-caption-l nhsuk-caption--bottom ">
+University of Oxford</span>
+Manage users
+</h1>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-third">
+    <a class="nhsuk-button" href="/sde/ext/add-new-user-details">Add a new user</a>
+  </div>
+  <div class="nhsuk-grid-column-one-half">
+    <p></p>
+  </div>
+</div>
+
+<div class="search">
+<div class="nhsuk-grid-column-one-third">
+<div class="nhsuk-u-padding-bottom-4"></div>
+  <div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-10">
+    <strong>Search</strong>
+  </label>
+  <div class="nhsuk-hint" id="contact-hint">
+    Search by first name, last name.
+  </div>
+  <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text"><div class="nhsuk-u-padding-bottom-4"></div>
+  <a class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+  Search
+</a>
+<br/>
+<a href="#">Clear search</a>
+  </div>
+<div class="nhsuk-u-padding-bottom-4"></div>
+  <form>
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <p><strong>Filter by status</strong> <span class="clear-filters"><a href="#">Clear filters</a></span></p>
+        <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation">
+              Pending induction
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+              Active
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+              Deactivated
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+<a class="nhsuk-button" href="#">Apply filters</a>
+</form>
+
+
+<!-- <form>
+
+<div class="nhsuk-form-group">
+
+  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+    <div class="nhsuk-checkboxes">
+      <p><strong>Filter by DSA</strong></p>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+          DSA-NIC-1234-v1
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+          DSA-NIC-4545-v3.8
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          DSA-NIC-4543-v2
+        </label>
+      </div>
+
+    </div>
+  </fieldset>
+
+</div>
+
+</form>-->
+
+</div>
+
+<div class="nhsuk-grid-column-two-thirds">
+  <!-- <p class="csv"><span><a href="#" class="r-export">Export all data (CSV)</a></span></p> -->
+  <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible">
+
+  <table role="table" class="nhsuk-table-responsive">
+  <thead role="rowgroup" class="nhsuk-table__head">
+    <tr role="row">
+      <th role="columnheader" class="" scope="col">
+        Name
+      </th>
+      <th role="columnheader" class="" scope="col">
+        Last logged in
+      </th>
+      <th role="columnheader" class="fixed-w" scope="col">
+        Status
+      </th>
+    </tr>
+  </thead>
+  <tbody class="nhsuk-table__body">
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Michelle Flynn</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>10 January 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag nhsuk-tag--blue">Pending induction</strong>
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Emily Snailham</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>10 January 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag nhsuk-tag--blue">Pending induction</strong>
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="/sde/ext/emily-davis">Emily Davis</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>15 January 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--aqua-green">Active</strong>
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Mariya Patel</a><br/><span class="role-fnt">User Manager</span>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>11 February 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <!-- <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag nhsuk-tagblue">Pending induction</strong> -->
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Pamela Huber</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>18 February 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">Deactivated</strong>
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">David Francis</a><br/><span class="role-fnt"> User Manager</span>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>15 January 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <!-- <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag-aqua-green">Active</strong> -->
+      </td>
+    </tr>
+
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Tom Hunter</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>22 January 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">Deactivated</strong>
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Mateo Choi</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>15 January 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <!-- <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag-aqua-green">Active</strong> -->
+      </td>
+    </tr>
+
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Sarah Philips</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>22 January 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">Deactivated</strong>
+      </td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Lisa Lenehan</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>15 January 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--aqua-green">Active</strong>
+      </td>
+    </tr>
+
+    <tr role="row" class="nhsuk-table__row">
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Austin Vo</a>
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Last Logged in </span>22 January 2024
+      </td>
+      <td role="cell" class="nhsuk-table__cell">
+        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">Deactivated</strong>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+     What do these statuses mean?
+    </span>
+  </summary>
+
+<div class="nhsuk-details__text">
+
+  <table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body">
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell "><strong class="nhsuk-tag nhsuk-tag--blue statuses-nhs-tag">PENDING&nbsp;INDUCTION</strong></td>
+      <td class="nhsuk-table__cell ">&nbsp;User has been sent induction assessment invite email but has not yet passed the assessment.</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell "><strong class="nhsuk-tag nhsuk-tag--aqua-green">ACTIVE</strong></td>
+      <td class="nhsuk-table__cell ">User has access to the SDE.</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell "><strong class="nhsuk-tag nhsuk-tag--red">DEACTIVATED</strong></td>
+      <td class="nhsuk-table__cell ">User account is temporarily closed but can be reactivated at any time.</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell "><strong class="nhsuk-tag nhsuk-tag--red">DELETED</strong></td>
+      <td class="nhsuk-table__cell ">User account has been permanently closed.</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+</details>
+</div>
+</div>
+
+
+</div>
+</div>
+</main>
+</div>
+
+
+
+
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Accessibility</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Freedom of information</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Privacy and cookies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Change cookie settings</a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Contact us </a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Terms and conditions </a></li>
+        <li class="nhsuk-footer__list-item"><a href="#" class="nhsuk-footer__list-item-link">Data</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

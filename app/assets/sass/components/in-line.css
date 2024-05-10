@@ -1,5 +1,5 @@
 .l-pro-signlink, .l-signout{
-	float: right !important; 
+	float: right !important;
 	color: #fff !important;
 }
 
@@ -134,7 +134,7 @@ float: left !important;
 .hide-lft-border .nhsuk-radios__item {
   clear: none !important;
   float: left !important;
-  margin-right: 24px !important; 
+  margin-right: 24px !important;
 }
 
 
@@ -666,4 +666,8 @@ background: none !important;
     padding: 12px 0 0;
     position: relative;
     width: 100%;
+}
+
+.nhsuk-breadcrumb__list{
+	font-size: 19px !important;
 }

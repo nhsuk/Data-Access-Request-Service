@@ -8149,3 +8149,7 @@ p.nhsuk-message-name {
 
 .nhsuk-error-summary-blue {
   border: 4px solid #005eb8; }
+
+  .nhsuk-breadcrumb__list{
+    font-size: 19px !important;
+  }

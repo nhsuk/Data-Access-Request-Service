@@ -668,6 +668,6 @@ background: none !important;
     width: 100%;
 }
 
-.nhsuk-breadcrumb__list{
+.nhsuk-breadcrumb__item{
 	font-size: 19px !important;
 }

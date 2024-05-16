@@ -977,3 +977,6 @@ background: none !important;
 .nhsuk-header__navigation-link{
 	text-decoration: underline !important;
 }
+
+
+.nhsuk-header__navigation-link a:hover{ text-decoration: none !important; }

@@ -292,10 +292,45 @@ Manage users
 <!-- <a href="#">Clear search</a> -->
   </div>
 <div class="nhsuk-u-padding-bottom-4"></div>
+
+<form>
+  <div class="nhsuk-form-group nhsuk-form-group--error">
+    <fieldset class="govuk-fieldset">
+      <p><strong>Roles</strong> <span class="clear-filters"><!-- <a href="#">Clear filters</a></span></p> -->
+      <span class="nhsuk-error-message" id="contact-error">
+      <span class="nhsuk-u-visually-hidden">Error:</span> Select a filter
+    </span>
+      <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="2" name="organisation" type="checkbox" value="hmrc">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation">
+            Data Analyst
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+            Data Analyst
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+            Both (Data Analyst and User Manager)
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+<!-- <a class="nhsuk-button" href="#">Apply filters</a> -->
+</form>
+
+
   <form>
     <div class="nhsuk-form-group nhsuk-form-group--error">
       <fieldset class="govuk-fieldset">
-        <!-- <p><strong>Filter by status</strong> <span class="clear-filters"><a href="#">Clear filters</a></span></p> -->
+      <p><strong>Status</strong> <span class="clear-filters">  <!-- <a href="#">Clear filters</a></span></p> -->
         <span class="nhsuk-error-message" id="contact-error">
         <span class="nhsuk-u-visually-hidden">Error:</span> Select a filter
       </span>

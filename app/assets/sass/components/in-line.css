@@ -993,3 +993,9 @@ background: none !important;
     margin-bottom: 0;
     padding-bottom: 24px;
 }
+
+
+.app-ogl-footer
+{
+  background-color: #d8dde0 !important;
+}

@@ -1003,3 +1003,7 @@ background: none !important;
 .nhsuk-footer__list-item-link {
     color: #003087;
 }
+
+.nhsuk-footer__list-item-link:visited{
+	color: #003087;
+}

@@ -999,3 +999,7 @@ background: none !important;
 {
   background-color: #d8dde0 !important;
 }
+
+.nhsuk-footer__list-item-link {
+    color: #003087;
+}

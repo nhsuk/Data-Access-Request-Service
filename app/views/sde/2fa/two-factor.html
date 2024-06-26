@@ -115,9 +115,9 @@ Set up two-factor authentication
 <div>
   <img src="/images/code.jpg" height="300" width="300">
 </div>
+<br/>&nbsp;
 
-
-<details class="nhsuk-details">
+<details class="nhsuk-details" open>
   <summary class="nhsuk-details__summary">
     <span class="nhsuk-details__summary-text">
       I cannot scan the QR code
@@ -133,8 +133,17 @@ Set up two-factor authentication
 <p>3. The authenticator app will show a security code.</p>
 <p>4. Enter the security code below</p>
 
-<p>Security code</p>
-<p>This is the 6-digit number shown in your authenticator app</p>
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="example-with-hint-text">
+    Security code
+  </label>
+  <div class="nhsuk-hint" id="example-with-hint-text-hint">
+    This is the 6-digit number shown in your authenticator app
+  </div>
+  <input class="nhsuk-input nhsuk-input--width-10" id="example-with-hint-text" name="example-with-hint-text" type="text" aria-describedby="example-with-hint-text-hint" inputmode="numeric">
+</div>
+
+
 
 <a href="#" class="nhsuk-button">Sign in</a></p>
 
